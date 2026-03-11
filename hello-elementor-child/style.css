@@ -1,0 +1,39 @@
+/*
+ Theme Name:   Hello Elementor Child - Colegio Gonzaga
+ Theme URI:    https://colegiogonzaga.edu.ve/
+ Description:  Tema hijo para el Colegio Gonzaga Maracaibo, basado en Hello Elementor. Creado para corregir errores de edición en el tema padre y gestionar la migración de diseño personalizada.
+ Author:       Antigravity / Colegio Gonzaga
+ Author URI:   https://github.com/google-deepmind
+ Template:     hello-elementor
+ Version:      1.0.0
+ Text Domain:  hello-elementor-child
+*/
+
+/* Tus estilos personalizados comienzan aquí */
+
+/* Botón Ver Actualidad / Estilo General Gonzaga */
+.btn-gonzaga-actualidad {
+    background-color: #1e3a8a !important;
+    color: #ffffff !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    padding: 12px 40px !important;
+    border-radius: 50px !important;
+    transition: all 0.3s ease-in-out !important;
+    box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.2) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.btn-gonzaga-actualidad:hover {
+    background-color: #1d4ed8 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 20px 25px -5px rgba(30, 58, 138, 0.3) !important;
+}
+
+.btn-gonzaga-actualidad .elementor-button-icon {
+    font-size: 16px !important;
+}

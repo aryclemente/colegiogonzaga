@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Propuesta Educativa - Colegio Gonzaga Maracaibo</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a8a",
+                        secondary: "#dc2626",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                        serif: ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        .glass-nav {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+    .dark .glass-nav {
+      background-color: rgba(15, 23, 42, 0.95);
+    }
+    .hero-gradient {
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.9)
+      );
+    }
+    .card-shadow {
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    }
+    .dark .card-shadow {
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+    }
+    .ppi-card.active {
+      @apply bg-primary text-white border-primary shadow-xl scale-105;
+    }
+    .ppi-card.active span {
+      @apply text-white;
+    }
+    .activity-tab.active-style {
+      @apply bg-primary text-white border-primary shadow-lg;
+    }
+    .nav-dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content {
+      display: none;
+    }
+    .nested-dropdown:hover .nested-content {
+      display: block;
+    }
+    .nested-content {
+      display: none;
+    }
+  </style>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300">
+    <!-- Nav Header -->
+    <header class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <a href="code.html" class="flex items-center gap-4">
+                        <img src="assets/LogoColegioGonzaga.png" alt="Colegio Gonzaga"
+                            class="h-12 w-auto rounded-full bg-white p-1" />
+                        <div class="hidden md:block">
+                            <h1 class="text-primary dark:text-white font-bold text-lg leading-tight">
+                                COLEGIO GONZAGA
+                            </h1>
+                            <p
+                                class="text-[10px] tracking-[0.2em] text-slate-500 dark:text-slate-400 font-bold uppercase">
+                                Maracaibo
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="hidden lg:flex items-center gap-8 font-semibold text-sm h-16">
+                    <!-- preserved nav content -->
+                    <div class="nav-dropdown group h-full flex items-center relative">
+                        <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+                            href="#">Sobre Nosotros
+                            <span
+                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+                        </a>
+                        <div
+                            class="dropdown-content absolute top-full left-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+                            <ul class="space-y-1">
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="mision.html">Misión, Visión y Valores</a>
+                                </li>
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="historia.html">Nuestra Historia
+                                        <span class="text-[10px] text-slate-400 font-normal ml-1">(Egresados)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown group h-full flex items-center relative">
+                        <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+                            href="propuestaeducativa.html">Propuesta Educativa
+                            <span
+                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+                        </a>
+                        <div
+                            class="dropdown-content absolute top-full left-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+                            <ul class="space-y-1">
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="propuestaeducativa.html#marco-pedagogico">Marco Pedagógico</a>
+                                </li>
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="propuestaeducativa.html#academico">Académica</a>
+                                </li>
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="propuestaeducativa.html#extra-catedra">Extra-Cátedra</a>
+                                </li>
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="propuestaeducativa.html#pastoral">Pastoral</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="hover:text-primary transition-colors py-2" href="actualidad.html">Actualidad</a>
+                    <div class="nav-dropdown group h-full flex items-center relative">
+                        <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+                            href="#">Financiamiento
+                            <span
+                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+                        </a>
+                        <div
+                            class="dropdown-content absolute top-full left-0 w-72 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+                            <ul class="space-y-1">
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="financiamiento.html#aportes-familiares">Aportes Familiares</a>
+                                </li>
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="financiamiento.html#comunidades">Aportes Comunidades Educativas</a>
+                                </li>
+                                <li class="nested-dropdown relative group/nested">
+                                    <a class="flex items-center justify-between px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="financiamiento.html#proyectos">Proyectos de Financiamiento
+                                        <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+                                    <div
+                                        class="nested-content absolute left-full top-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-xl py-4">
+                                        <ul class="space-y-1">
+                                            <li>
+                                                <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors text-xs"
+                                                    href="financiamiento.html#beca">Beca un Gonzaga</a>
+                                            </li>
+                                            <li>
+                                                <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors text-xs"
+                                                    href="financiamiento.html#responsable">Soy Gonzaga Responsable</a>
+                                            </li>
+                                            <li>
+                                                <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors text-xs"
+                                                    href="financiamiento.html#valiente">Soy Gonzaga Valiente</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="financiamiento.html#catalogo">Catálogo Histórico</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown group h-full flex items-center relative">
+                        <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+                            href="#">Vínculate
+                            <span
+                                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+                        </a>
+                        <div
+                            class="dropdown-content absolute top-full left-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+                            <ul class="space-y-1">
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="exalumnos.html">Red de Exalumnos</a>
+                                </li>
+                                <li>
+                                    <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                                        href="voluntarios.html">Red de Voluntarios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        id="theme-toggle">
+                        <span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+                        <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+                    </button>
+                    <a class="bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg hover:shadow-primary/30 flex items-center gap-2"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">favorite</span>
+                        Donar Aquí
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-[72px]">
+        <!-- Hero Section -->
+        <section class="relative h-[65vh] min-h-[550px] flex items-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="assets/beca2.png" alt="Propuesta Educativa Gonzaga" class="w-full h-full object-cover">
+                <div class="absolute inset-0 hero-gradient"></div>
+            </div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-6xl md:text-8xl font-serif text-white italic mb-6 leading-tight drop-shadow-2xl">
+                        Nuestra Propuesta Educativa
+                    </h2>
+                    <span
+                        class="inline-block bg-secondary text-white px-6 py-2 rounded-full text-[10px] font-black tracking-[0.4em] uppercase mb-8 shadow-2xl shadow-secondary/40">
+                        Formación Integral e Ignaciana
+                    </span>
+                    <p
+                        class="text-lg md:text-xl text-white/90 font-light leading-relaxed max-w-2xl mx-auto drop-shadow-lg italic">
+                        "Buscamos transformar la realidad a través del Contexto, Experiencia, Reflexión, Acción y
+                        Evaluación."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marco Pedagógico Section (Compact) -->
+        <section id="marco-pedagogico"
+            class="py-20 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-[1fr_380px] gap-12 items-start">
+                    <!-- Main Content -->
+                    <div>
+                        <div class="mb-12">
+                            <h3
+                                class="text-3xl md:text-4xl font-extrabold text-primary dark:text-blue-400 mb-4 font-display uppercase tracking-tight">
+                                Marco Pedagógico
+                            </h3>
+                            <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-light max-w-2xl">
+                                Nuestra metodología central para el desarrollo crítico y espiritual del estudiante. Un
+                                viaje transformador en cinco etapas clave.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-3" id="ppi-cards">
+                            <!-- PPI Cards Small -->
+                            <button onclick="updatePPI('contexto')"
+                                class="ppi-card active p-6 rounded-2xl text-center card-shadow transition-all border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:border-primary group"
+                                data-step="contexto">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-blue-400 text-3xl mb-3 group-hover:scale-110 transition-transform">public</span>
+                                <h4 class="font-bold text-[10px] uppercase tracking-widest">Contexto</h4>
+                            </button>
+                            <button onclick="updatePPI('experiencia')"
+                                class="ppi-card p-6 rounded-2xl text-center card-shadow transition-all border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:border-primary group"
+                                data-step="experiencia">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-blue-400 text-3xl mb-3 group-hover:scale-110 transition-transform">lightbulb</span>
+                                <h4 class="font-bold text-[10px] uppercase tracking-widest">Experiencia</h4>
+                            </button>
+                            <button onclick="updatePPI('reflexion')"
+                                class="ppi-card p-6 rounded-2xl text-center card-shadow transition-all border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:border-primary group"
+                                data-step="reflexion">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-blue-400 text-3xl mb-3 group-hover:scale-110 transition-transform">psychology</span>
+                                <h4 class="font-bold text-[10px] uppercase tracking-widest">Reflexión</h4>
+                            </button>
+                            <button onclick="updatePPI('accion')"
+                                class="ppi-card p-6 rounded-2xl text-center card-shadow transition-all border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:border-primary group"
+                                data-step="accion">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-blue-400 text-3xl mb-3 group-hover:scale-110 transition-transform">rocket_launch</span>
+                                <h4 class="font-bold text-[10px] uppercase tracking-widest">Acción</h4>
+                            </button>
+                            <button onclick="updatePPI('evaluacion')"
+                                class="ppi-card p-6 rounded-2xl text-center card-shadow transition-all border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 hover:border-primary group"
+                                data-step="evaluacion">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-blue-400 text-3xl mb-3 group-hover:scale-110 transition-transform">verified</span>
+                                <h4 class="font-bold text-[10px] uppercase tracking-widest">Evaluación</h4>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PPI Detail Sidebar -->
+                    <aside id="ppi-detail">
+                        <div
+                            class="bg-primary dark:bg-blue-900 rounded-[2rem] p-8 text-white shadow-2xl relative overflow-hidden h-full flex flex-col justify-center">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+                            <div class="relative z-10">
+                                <div id="ppi-icon-container"
+                                    class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+                                    <span id="ppi-detail-icon" class="material-symbols-outlined text-2xl">public</span>
+                                </div>
+                                <h4 id="ppi-detail-title" class="text-2xl font-serif italic mb-4">Contexto</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <p class="text-[9px] uppercase font-bold tracking-[0.2em] text-blue-300 mb-1">
+                                            Pregunta Fuerza</p>
+                                        <p id="ppi-detail-q" class="text-base font-bold leading-tight">¿Qué realidad
+                                            vive el alumno?</p>
+                                    </div>
+                                    <div class="pt-4 border-t border-white/10">
+                                        <p class="text-[9px] uppercase font-bold tracking-[0.2em] text-blue-300 mb-1">
+                                            Ejemplo Práctico</p>
+                                        <p id="ppi-detail-ex"
+                                            class="text-xs font-light text-blue-50/80 leading-relaxed italic">Análisis
+                                            del entorno socio-económico local en el aula antes de iniciar un nuevo tema.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Académico Section -->
+        <section id="academico" class="py-24 bg-white dark:bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <img src="assets/propuestaeducativa.jpeg" alt="Académico Gonzaga"
+                            class="relative z-10 rounded-[3rem] shadow-2xl h-[400px] w-full object-cover">
+                        <div class="absolute -bottom-4 -right-4 bg-primary p-6 rounded-2xl text-white shadow-2xl z-20">
+                            <p class="text-3xl font-black mb-0">80</p>
+                            <p class="text-[8px] uppercase font-bold tracking-widest">Años de Excelencia</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span
+                            class="text-secondary font-black text-[10px] uppercase tracking-[0.3em] mb-3 inline-block italic">Compromiso
+                            Magis</span>
+                        <h3 class="text-3xl md:text-4xl font-extrabold text-primary dark:text-white mb-6 leading-tight">
+                            Excelencia Académica y Rigor Humanista
+                        </h3>
+                        <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 font-light leading-relaxed">
+                            En el Colegio Gonzaga, entendemos la academia no solo como la adquisición de conocimientos,
+                            sino como el desarrollo integral del pensamiento crítico, la curiosidad intelectual y el
+                            discernimiento.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div
+                                class="flex gap-4 p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-100 dark:border-slate-800">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-blue-400 text-2xl">auto_awesome</span>
+                                <div>
+                                    <h5 class="font-bold text-sm mb-1 uppercase tracking-tighter">Aprendizaje Activo
+                                    </h5>
+                                    <p class="text-[10px] text-slate-500">Metodologías donde el estudiante es el centro.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-4 p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-100 dark:border-slate-800">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-blue-400 text-2xl">biotech</span>
+                                <div>
+                                    <h5 class="font-bold text-sm mb-1 uppercase tracking-tighter">Innovación</h5>
+                                    <p class="text-[10px] text-slate-500">Laboratorios y tecnología de vanguardia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentación (Now under Académico and half height) -->
+        <section class="py-12 bg-slate-50 dark:bg-slate-800/20">
+            <div class="container mx-auto px-6">
+                <div
+                    class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 bg-white dark:bg-slate-900 p-8 rounded-[2.5rem] shadow-xl border border-slate-100 dark:border-slate-800">
+                    <div class="flex-1 text-center md:text-left">
+                        <h4
+                            class="text-xl font-bold text-primary dark:text-white mb-2 font-display uppercase tracking-widest">
+                            Documentación</h4>
+                        <p class="text-xs text-slate-500 font-light">
+                            Descarga el pensum actualizado y el programa de estudios del colegio.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#"
+                            class="flex items-center gap-3 bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary transition-all group">
+                            <span class="material-symbols-outlined text-secondary text-xl">picture_as_pdf</span>
+                            <div>
+                                <p class="text-[10px] font-bold text-slate-900 dark:text-white leading-tight uppercase">
+                                    Pensum 2026</p>
+                                <p class="text-[8px] text-slate-400 font-bold">PDF • 2.4 MB</p>
+                            </div>
+                        </a>
+                        <a href="#"
+                            class="flex items-center gap-3 bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary transition-all group">
+                            <span class="material-symbols-outlined text-secondary text-xl">picture_as_pdf</span>
+                            <div>
+                                <p class="text-[10px] font-bold text-slate-900 dark:text-white leading-tight uppercase">
+                                    Programa Estudios</p>
+                                <p class="text-[8px] text-slate-400 font-bold">PDF • 5.1 MB</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extra-Cátedras Section (Compact & No Pastoral) -->
+        <section id="extra-catedras" class="py-24 bg-white dark:bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+                    <div class="max-w-xl">
+                        <h3
+                            class="text-3xl md:text-5xl font-extrabold text-primary dark:text-white mb-4 uppercase tracking-tighter italic">
+                            Extra-Cátedras</h3>
+                        <p class="text-lg text-slate-500 font-light italic">Formación integral más allá de las aulas
+                            académicas tradicionales.</p>
+                    </div>
+                    <div class="flex gap-2" id="activity-selector">
+                        <button onclick="showActivity('deportes')"
+                            class="activity-tab active-style px-6 py-2 rounded-full font-bold text-[10px] uppercase border-2 border-slate-100 dark:border-slate-800 hover:border-primary transition-all">Deportes</button>
+                        <button onclick="showActivity('musica')"
+                            class="activity-tab px-6 py-2 rounded-full font-bold text-[10px] uppercase border-2 border-slate-100 dark:border-slate-800 hover:border-primary transition-all">Música</button>
+                        <button onclick="showActivity('tecnologia')"
+                            class="activity-tab px-6 py-2 rounded-full font-bold text-[10px] uppercase border-2 border-slate-100 dark:border-slate-800 hover:border-primary transition-all">Tecnología</button>
+                        <button onclick="showActivity('teatro')"
+                            class="activity-tab px-6 py-2 rounded-full font-bold text-[10px] uppercase border-2 border-slate-100 dark:border-slate-800 hover:border-primary transition-all">Teatro</button>
+                    </div>
+                </div>
+
+                <div id="activity-container">
+                    <!-- Deportes -->
+                    <div id="activity-deportes" class="activity-content block">
+                        <div class="grid lg:grid-cols-[1fr_350px] gap-12 items-center">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="relative h-[300px] rounded-3xl overflow-hidden shadow-xl group">
+                                    <img src="assets/deporte.png" alt="Deportes"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                                        <p class="text-white text-lg font-serif italic">Disciplina y Fuerza</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center gap-6">
+                                    <div>
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-primary dark:text-blue-400 mb-2">
+                                            La Actividad</h5>
+                                        <p
+                                            class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-light">
+                                            Fomentamos el trabajo en equipo a través de Fútbol, Baloncesto, Voleibol y
+                                            Atletismo competitivos.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="p-6 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-secondary mb-3 flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-sm">emoji_events</span>
+                                            Logros
+                                        </h5>
+                                        <p class="text-[10px] font-bold text-slate-700 dark:text-slate-200">Campeones
+                                            Regionales de Fútbol Sub-16 (2024).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-primary p-8 rounded-[2rem] text-white shadow-xl relative overflow-hidden flex flex-col items-center text-center">
+                                <img src="assets/administrativos.jpeg" alt="Coordinador"
+                                    class="w-20 h-20 rounded-full mb-4 object-cover border-2 border-white/20">
+                                <h6 class="font-serif italic text-lg leading-tight">Prof. Juan Pérez</h6>
+                                <p class="text-[8px] uppercase font-bold tracking-widest text-blue-300 mb-4">Coordinador
+                                    Deportes</p>
+                                <a href="mailto:deportes@gonzagaedu.ve"
+                                    class="bg-white text-primary px-6 py-2 rounded-xl text-[10px] font-bold hover:bg-slate-100 transition-colors">Contactar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Música -->
+                    <div id="activity-musica" class="activity-content hidden">
+                        <div class="grid lg:grid-cols-[1fr_350px] gap-12 items-center">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="relative h-[300px] rounded-3xl overflow-hidden shadow-xl group">
+                                    <img src="assets/musica.jpg" alt="Música"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                                        <p class="text-white text-lg font-serif italic">Armonía y Talento</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center gap-6">
+                                    <div>
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-primary dark:text-blue-400 mb-2">
+                                            La Actividad</h5>
+                                        <p
+                                            class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-light">
+                                            Desarrollo de habilidades musicales a través de nuestra orquesta, coro y
+                                            ensambles instrumentales.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="p-6 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-secondary mb-3 flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-sm">emoji_events</span>
+                                            Logros
+                                        </h5>
+                                        <p class="text-[10px] font-bold text-slate-700 dark:text-slate-200">Mención
+                                            honorífica en el Festival Regional de Orquestas 2024.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-primary p-8 rounded-[2rem] text-white shadow-xl relative overflow-hidden flex flex-col items-center text-center">
+                                <img src="assets/administrativos.jpeg" alt="Coordinador"
+                                    class="w-20 h-20 rounded-full mb-4 object-cover border-2 border-white/20">
+                                <h6 class="font-serif italic text-lg leading-tight">Prof. Ricardo Arias</h6>
+                                <p class="text-[8px] uppercase font-bold tracking-widest text-blue-300 mb-4">Coordinador
+                                    Música</p>
+                                <a href="mailto:musica@gonzagaedu.ve"
+                                    class="bg-white text-primary px-6 py-2 rounded-xl text-[10px] font-bold hover:bg-slate-100 transition-colors">Contactar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tecnología -->
+                    <div id="activity-tecnologia" class="activity-content hidden">
+                        <div class="grid lg:grid-cols-[1fr_350px] gap-12 items-center">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="relative h-[300px] rounded-3xl overflow-hidden shadow-xl group">
+                                    <img src="assets/ninos.png" alt="Tecnología"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                                        <p class="text-white text-lg font-serif italic">Innovación Digital</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center gap-6">
+                                    <div>
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-primary dark:text-blue-400 mb-2">
+                                            La Actividad</h5>
+                                        <p
+                                            class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-light">
+                                            Fomentamos el pensamiento lógico y creativo mediante robótica, programación
+                                            y diseño digital.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="p-6 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-secondary mb-3 flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-sm">emoji_events</span>
+                                            Logros
+                                        </h5>
+                                        <p class="text-[10px] font-bold text-slate-700 dark:text-slate-200">2do lugar en
+                                            el Torneo Nacional de Robótica Educativa.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-primary p-8 rounded-[2rem] text-white shadow-xl relative overflow-hidden flex flex-col items-center text-center">
+                                <img src="assets/administrativos.jpeg" alt="Coordinador"
+                                    class="w-20 h-20 rounded-full mb-4 object-cover border-2 border-white/20">
+                                <h6 class="font-serif italic text-lg leading-tight">Ing. Mariana Castro</h6>
+                                <p class="text-[8px] uppercase font-bold tracking-widest text-blue-300 mb-4">Coordinador
+                                    Tecnología</p>
+                                <a href="mailto:tecnologia@gonzagaedu.ve"
+                                    class="bg-white text-primary px-6 py-2 rounded-xl text-[10px] font-bold hover:bg-slate-100 transition-colors">Contactar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teatro -->
+                    <div id="activity-teatro" class="activity-content hidden">
+                        <div class="grid lg:grid-cols-[1fr_350px] gap-12 items-center">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="relative h-[300px] rounded-3xl overflow-hidden shadow-xl group">
+                                    <img src="assets/arte.jpeg" alt="Teatro"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                                        <p class="text-white text-lg font-serif italic">Expresión y Arte</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center gap-6">
+                                    <div>
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-primary dark:text-blue-400 mb-2">
+                                            La Actividad</h5>
+                                        <p
+                                            class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-light">
+                                            Desarrollo de la expresión corporal y verbal a través de montajes teatrales
+                                            y talleres de actuación.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="p-6 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        <h5
+                                            class="text-xs font-black uppercase tracking-widest text-secondary mb-3 flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-sm">emoji_events</span>
+                                            Logros
+                                        </h5>
+                                        <p class="text-[10px] font-bold text-slate-700 dark:text-slate-200">Estreno de
+                                            la obra original "80 Años de Fe" con lleno total.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-primary p-8 rounded-[2rem] text-white shadow-xl relative overflow-hidden flex flex-col items-center text-center">
+                                <img src="assets/administrativos.jpeg" alt="Coordinador"
+                                    class="w-20 h-20 rounded-full mb-4 object-cover border-2 border-white/20">
+                                <h6 class="font-serif italic text-lg leading-tight">Lic. Sofía Villalobos</h6>
+                                <p class="text-[8px] uppercase font-bold tracking-widest text-blue-300 mb-4">Coordinador
+                                    Teatro</p>
+                                <a href="mailto:teatro@gonzagaedu.ve"
+                                    class="bg-white text-primary px-6 py-2 rounded-xl text-[10px] font-bold hover:bg-slate-100 transition-colors">Contactar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastoral Section (Independent) -->
+        <section id="pastoral" class="py-24 bg-slate-50 dark:bg-slate-800/20">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-[1fr_400px] gap-16 items-center">
+                    <div>
+                        <span
+                            class="text-secondary font-black text-[10px] uppercase tracking-[0.4em] mb-4 inline-block italic">Fe
+                            y Servicio</span>
+                        <h3
+                            class="text-4xl md:text-5xl font-extrabold text-primary dark:text-white mb-8 leading-tight font-display">
+                            Pastoral Gonzaga</h3>
+                        <p class="text-xl text-slate-600 dark:text-slate-400 mb-10 font-light leading-relaxed">
+                            La formación espiritual e ignaciana es el corazón de nuestra propuesta. Buscamos formar
+                            hombres y mujeres comprometidos con su fe y el servicio desinteresado.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div
+                                class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-lg border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all">
+                                <img src="assets/logohuellas.png" alt="Huellas"
+                                    class="w-12 mx-auto mb-4 grayscale opacity-50">
+                                <h5 class="font-bold text-sm text-center mb-1">Huellas</h5>
+                                <p class="text-[10px] text-slate-400 text-center uppercase font-bold tracking-tighter">
+                                    Servicio y Fe</p>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-lg border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all">
+                                <img src="assets/logojesuita.png" alt="Brújula Juvenil"
+                                    class="w-12 mx-auto mb-4 grayscale opacity-50">
+                                <h5 class="font-bold text-sm text-center mb-1">Brújula Juvenil</h5>
+                                <p class="text-[10px] text-slate-400 text-center uppercase font-bold tracking-tighter">
+                                    Propósito de Vida</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-900 p-10 rounded-[3rem] shadow-2xl relative overflow-hidden border border-slate-100 dark:border-slate-800 text-center">
+
+
+
+
+                        <img src="assets/nuncasolos.png" alt="Nunca Solos"
+                            class="mx-auto mb-2 w-56 h-56 object-contain">
+
+
+
+
+                        <h4 class="text-2xl font-serif italic mb-2 text-primary dark:text-white">Formación Ignaciana
+                        </h4>
+                        <p class="text-sm text-slate-500 font-light mb-8">Misiones rurales, retiros espirituales y
+                            convivencias familiares que transforman vidas.</p>
+                        <div
+                            class="flex items-center justify-center gap-4 pt-8 border-t border-slate-100 dark:border-slate-800">
+                            <img src="assets/administrativos.jpeg" alt="Coordinador Pastoral"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div class="text-left">
+                                <p class="text-xs font-bold leading-none">P. Luis Sánchez</p>
+                                <p
+                                    class="text-[8px] text-slate-400 uppercase font-black uppercase tracking-widest mt-1">
+                                    Coord. Pastoral</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ & Contact Section (Compact Layout) -->
+        <section class="py-24 bg-white dark:bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-[70%_30%] gap-12 items-center">
+                    <!-- FAQs -->
+                    <div>
+                        <h3 class="text-3xl font-extrabold text-primary dark:text-white mb-8 uppercase tracking-tight">
+                            Preguntas Frecuentes</h3>
+                        <div class="space-y-3">
+                            <div
+                                class="faq-item bg-slate-50 dark:bg-slate-800/20 rounded-3xl p-6 border border-slate-100 dark:border-slate-800">
+                                <button class="faq-btn w-full flex items-center justify-between text-left group">
+                                    <span
+                                        class="font-bold text-slate-800 dark:text-slate-100 text-sm group-hover:text-primary transition-colors">¿Cómo
+                                        se integra la tecnología en el aula?</span>
+                                    <span class="material-symbols-outlined faq-icon transition-transform">add</span>
+                                </button>
+                                <div
+                                    class="faq-content hidden pt-4 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Metodologías de aprendizaje basado en proyectos que fomentan la innovación digital.
+                                </div>
+                            </div>
+                            <div
+                                class="faq-item bg-slate-50 dark:bg-slate-800/20 rounded-3xl p-6 border border-slate-100 dark:border-slate-800">
+                                <button class="faq-btn w-full flex items-center justify-between text-left group">
+                                    <span
+                                        class="font-bold text-slate-800 dark:text-slate-100 text-sm group-hover:text-primary transition-colors">¿Cuáles
+                                        son los requisitos de ingreso?</span>
+                                    <span class="material-symbols-outlined faq-icon transition-transform">add</span>
+                                </button>
+                                <div
+                                    class="faq-content hidden pt-4 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Entrevista familiar y evaluación diagnóstica integral de competencias.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Box Compact & Centered -->
+                    <div
+                        class="bg-primary p-8 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden flex flex-col justify-center items-center text-center h-[320px]">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mt-12"></div>
+                        <span class="material-symbols-outlined text-4xl mb-4 text-green-400">chat</span>
+                        <h3 class="text-xl font-bold mb-2 uppercase tracking-widest leading-none">¿Preguntas?</h3>
+                        <p class="text-[10px] text-blue-100 font-light mb-6 px-4">Escríbenos por WhatsApp para atención
+                            inmediata.</p>
+                        <a href="#"
+                            class="bg-white text-primary px-8 py-3 rounded-2xl font-bold text-xs shadow-xl hover:scale-105 transition-all">WhatsApp
+                            Admisiones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary pt-20 pb-10 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img alt="Logo Colegio Gonzaga" class="h-20 w-auto" src="assets/LogoColegioGonzaga.png" />
+                    </div>
+                    <p class="text-blue-200 text-sm leading-relaxed mb-6">
+                        Formación integral basada en los valores de la Compañía de Jesús,
+                        comprometidos con la excelencia académica.
+                    </p>
+                    <div class="flex gap-4">
+                        <!-- Instagram -->
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                            href="https://instagram.com/colegiogonzagamcbo" target="_blank" aria-label="Instagram">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                            href="https://wa.me/584226410505" target="_blank" aria-label="WhatsApp">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.438-9.89 9.886-.001 2.13.614 3.988 1.627 5.49l-.999 3.647 3.935-1.038zm11.233-7.114c-.31-.155-1.829-.903-2.112-1.006-.283-.103-.49-.155-.696.155-.206.31-.798 1.006-.978 1.212-.181.206-.361.232-.671.077-.309-.155-1.305-.481-2.486-1.534-.919-.82-1.539-1.832-1.719-2.141-.181-.309-.019-.477.135-.631.139-.139.309-.361.464-.541.155-.181.206-.309.309-.515.103-.206.052-.387-.026-.541-.077-.155-.696-1.676-.953-2.296-.25-.606-.503-.524-.696-.534-.181-.01-.387-.01-.593-.01-.206 0-.541.077-.825.387-.284.31-1.082 1.057-1.082 2.578 0 1.52 1.108 2.99 1.263 3.2 0 .21 2.182 3.332 5.286 4.67.738.318 1.314.508 1.763.65.74.235 1.414.201 1.946.122.592-.087 1.829-.747 2.087-1.469.258-.722.258-1.34.181-1.469-.077-.129-.283-.206-.593-.361z" />
+                            </svg>
+                        </a>
+                        <!-- Radio -->
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                            href="#" aria-label="Radio">
+                            <span class="material-symbols-outlined text-xl">radio</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="font-bold text-lg mb-6">Enlaces Rápidos</h6>
+                    <ul class="space-y-4 text-blue-200 text-sm">
+                        <li>
+                            <a class="hover:text-white transition-colors" href="#">Admisiones</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-white transition-colors" href="#">Tu Aporte Familiar</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-white transition-colors" href="#">Pastoral Educativa</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-white transition-colors" href="#">Beca un Gonzaga</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-bold text-lg mb-6">Contacto</h6>
+                    <ul class="space-y-4 text-blue-200 text-sm mb-8">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-blue-400">location_on</span>
+                            <span>Av. 35, Maracaibo, Edo. Zulia.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-blue-400">phone</span>
+                            <span>+58 422-6410505</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-blue-400">mail</span>
+                            <span>contacto@colegiogonzaga.edu.ve</span>
+                        </li>
+                    </ul>
+                    <a class="inline-flex items-center gap-2 bg-secondary hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-secondary/30"
+                        href="financiamiento.html">
+                        <span class="material-symbols-outlined text-xl">favorite</span>
+                        Donar Aquí
+                    </a>
+                </div>
+
+            </div>
+            <div
+                class="border-t border-white/10 pt-10 flex flex-col md:flex-row items-center justify-between text-xs text-blue-300 gap-4">
+                <p>
+                    © 2026 Colegio Gonzaga. Todo el contenido de este portal puede ser
+                    utilizado citando la fuente.
+                </p>
+                <div class="flex gap-6">
+                    <a class="hover:text-white" href="#">Política de Privacidad</a>
+                    <a class="hover:text-white" href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const ppiData = {
+            contexto: {
+                title: "Contexto",
+                icon: "public",
+                q: "¿Qué realidad vive el alumno?",
+                ex: "Análisis del entorno socio-económico local en el aula antes de iniciar un nuevo tema."
+            },
+            experiencia: {
+                title: "Experiencia",
+                icon: "lightbulb",
+                q: "¿Qué siente y percibe?",
+                ex: "Vivencias directas en misiones rurales y prácticas intensivas en laboratorios de ciencia."
+            },
+            reflexion: {
+                title: "Reflexión",
+                icon: "psychology",
+                q: "¿Qué significado tiene esto?",
+                ex: "Diálogos guiados tras jornadas de servicio social para captar el sentido profundo del otro."
+            },
+            accion: {
+                title: "Acción",
+                icon: "rocket_launch",
+                q: "¿Cómo transforma el alumno su entorno?",
+                ex: "Proyectos de servicio comunitario en comunidades vulnerables de Maracaibo."
+            },
+            evaluacion: {
+                title: "Evaluación",
+                icon: "verified",
+                q: "¿Qué hemos aprendido?",
+                ex: "Revisión continua del crecimiento personal y espiritual."
+            }
+        };
+
+        function updatePPI(step) {
+            const data = ppiData[step];
+            const detail = document.getElementById('ppi-detail');
+
+            document.getElementById('ppi-detail-title').innerText = data.title;
+            document.getElementById('ppi-detail-icon').innerText = data.icon;
+            document.getElementById('ppi-detail-q').innerText = data.q;
+            document.getElementById('ppi-detail-ex').innerText = data.ex;
+
+            document.querySelectorAll('.ppi-card').forEach(card => {
+                card.classList.remove('active');
+                if (card.getAttribute('data-step') === step) card.classList.add('active');
+            });
+
+            detail.style.opacity = '0';
+            detail.style.transform = 'translateY(5px)';
+            setTimeout(() => {
+                detail.style.transition = 'all 0.3s ease';
+                detail.style.opacity = '1';
+                detail.style.transform = 'translateY(0)';
+            }, 50);
+        }
+
+        function showActivity(activityId) {
+            document.querySelectorAll('.activity-tab').forEach(tab => {
+                tab.classList.remove('active-style');
+                if (tab.getAttribute('onclick').includes(activityId)) tab.classList.add('active-style');
+            });
+
+            const contents = document.querySelectorAll('.activity-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+            });
+
+            const activeContent = document.getElementById(`activity-${activityId}`);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+                activeContent.classList.add('block');
+            }
+
+            const container = document.getElementById('activity-container');
+            container.style.opacity = '0.5';
+            setTimeout(() => container.style.opacity = '1', 150);
+        }
+
+        document.querySelectorAll(".faq-btn").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector(".faq-icon");
+                const isOpen = !content.classList.contains("hidden");
+                document.querySelectorAll(".faq-content").forEach(c => c.classList.add("hidden"));
+                document.querySelectorAll(".faq-icon").forEach(i => i.textContent = "add");
+                if (!isOpen) { content.classList.remove("hidden"); icon.textContent = "remove"; }
+            });
+        });
+
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        const htmlElement = document.documentElement;
+        if (localStorage.getItem("theme") === "dark") htmlElement.classList.add("dark");
+        themeToggleBtn.addEventListener("click", () => {
+            htmlElement.classList.toggle("dark");
+            localStorage.setItem("theme", htmlElement.classList.contains("dark") ? "dark" : "light");
+        });
+    </script>
+</body>
+
+</html>

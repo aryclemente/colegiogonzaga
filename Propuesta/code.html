@@ -1,0 +1,1531 @@
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Colegio Gonzaga Maracaibo - Actualidad y Radio</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1e3a8a",
+            secondary: "#dc2626",
+            "background-light": "#f8fafc",
+            "background-dark": "#0f172a",
+          },
+          fontFamily: {
+            display: ["Montserrat", "sans-serif"],
+            serif: ["Playfair Display", "serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    .glass-nav {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+      .dark .glass-nav {
+        background-color: rgba(15, 23, 42, 0.95);
+      }
+      .hero-gradient {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.85)
+        );
+      }
+      .insta-hover:hover .overlay {
+        opacity: 1;
+      }
+      .nav-dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content {
+        display: none;
+      }
+      .nested-dropdown:hover .nested-content {
+        display: block;
+      }
+      .nested-content {
+        display: none;
+      }
+      .slide {
+        display: none;
+      }
+      .slide.active {
+        display: flex;
+      }
+      .carousel-arrow {
+        @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/40 border border-white/30 rounded-full flex items-center justify-center text-white transition-all z-30 cursor-pointer;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 40s linear infinite;
+      }
+    </style>
+</head>
+
+<body
+  class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300">
+  <header class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <a href="code.html" class="flex items-center gap-4">
+            <img src="assets/LogoColegioGonzaga.png" alt="Colegio Gonzaga"
+              class="h-12 w-auto rounded-full bg-white p-1" />
+            <div class="hidden md:block">
+              <h1 class="text-primary dark:text-white font-bold text-lg leading-tight">
+                COLEGIO GONZAGA
+              </h1>
+              <p class="text-[10px] tracking-[0.2em] text-slate-500 dark:text-slate-400 font-bold uppercase">
+                Maracaibo
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-8 font-semibold text-sm h-16">
+          <!-- preserved nav content -->
+          <div class="nav-dropdown group h-full flex items-center relative">
+            <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+              href="#">Sobre Nosotros
+              <span
+                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+            </a>
+            <div
+              class="dropdown-content absolute top-full left-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+              <ul class="space-y-1">
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="mision.html">Misión, Visión y Valores</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="historia.html">Nuestra Historia
+                    <span class="text-[10px] text-slate-400 font-normal ml-1">(Egresados)</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-dropdown group h-full flex items-center relative">
+            <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+              href="propuestaeducativa.html">Propuesta Educativa
+              <span
+                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+            </a>
+            <div
+              class="dropdown-content absolute top-full left-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+              <ul class="space-y-1">
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="propuestaeducativa.html#marco-pedagogico">Marco Pedagógico</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="propuestaeducativa.html#academico">Académica</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="propuestaeducativa.html#extra-catedra">Extra-Cátedra</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="propuestaeducativa.html#pastoral">Pastoral</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <a class="hover:text-primary transition-colors py-2" href="actualidad.html">Actualidad</a>
+          <div class="nav-dropdown group h-full flex items-center relative">
+            <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+              href="#">Financiamiento
+              <span
+                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+            </a>
+            <div
+              class="dropdown-content absolute top-full left-0 w-72 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+              <ul class="space-y-1">
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="financiamiento.html#aportes-familiares">Aportes Familiares</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="financiamiento.html#comunidades">Aportes Comunidades Educativas</a>
+                </li>
+                <li class="nested-dropdown relative group/nested">
+                  <a class="flex items-center justify-between px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="financiamiento.html#proyectos">Proyectos de Financiamiento
+                    <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+                  <div
+                    class="nested-content absolute left-full top-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-xl py-4">
+                    <ul class="space-y-1">
+                      <li>
+                        <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors text-xs"
+                          href="financiamiento.html#beca">Beca un Gonzaga</a>
+                      </li>
+                      <li>
+                        <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors text-xs"
+                          href="financiamiento.html#responsable">Soy Gonzaga Responsable</a>
+                      </li>
+                      <li>
+                        <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors text-xs"
+                          href="financiamiento.html#valiente">Soy Gonzaga Valiente</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="financiamiento.html#catalogo">Catálogo Histórico</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-dropdown group h-full flex items-center relative">
+            <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+              href="#">Vínculate
+              <span
+                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+            </a>
+            <div
+              class="dropdown-content absolute top-full left-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+              <ul class="space-y-1">
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="exalumnos.html">Red de Exalumnos</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="voluntarios.html">Red de Voluntarios</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            id="theme-toggle">
+            <span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+            <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+          </button>
+          <a class="hidden sm:flex bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg hover:shadow-primary/30 items-center gap-2"
+            href="#">
+            <span class="material-symbols-outlined text-sm">favorite</span>
+            Dona Aquí
+          </a>
+          <button
+            class="lg:hidden p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+            id="mobile-menu-open">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-[60] lg:hidden invisible transition-all duration-300">
+    <!-- Overlay -->
+    <div id="mobile-menu-overlay"
+      class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+
+    <!-- Menu Content -->
+    <div id="mobile-menu-content"
+      class="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white dark:bg-slate-900 shadow-2xl translate-x-full transition-transform duration-300 pb-12 overflow-y-auto">
+      <div class="flex items-center justify-between p-6 border-b border-slate-100 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+          <img src="assets/LogoColegioGonzaga.png" alt="Logo" class="h-8 w-auto rounded-full bg-slate-100 p-0.5" />
+          <span class="font-bold text-primary dark:text-white">MENÚ</span>
+        </div>
+        <button id="mobile-menu-close"
+          class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <nav class="p-6">
+        <ul class="space-y-4">
+          <!-- Sobre Nosotros -->
+          <li>
+            <button
+              class="mobile-dropdown-btn w-full flex items-center justify-between py-2 text-lg font-bold text-slate-800 dark:text-white"
+              data-target="m-sobre-nosotros">
+              Sobre Nosotros
+              <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+            </button>
+            <div id="m-sobre-nosotros"
+              class="hidden pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
+              <a href="mision.html"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400">Misión,
+                Visión y Valores</a>
+              <a href="historia.html"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-400">Nuestra
+                Historia</a>
+            </div>
+          </li>
+
+          <!-- Propuesta Educativa -->
+          <li>
+            <button
+              class="mobile-dropdown-btn w-full flex items-center justify-between py-2 text-lg font-bold text-slate-800 dark:text-white"
+              data-target="m-propuesta">
+              Propuesta Educativa
+              <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+            </button>
+            <div id="m-propuesta" class="hidden pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
+              <a href="propuestaeducativa.html#marco-pedagogico"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Marco Pedagógico</a>
+              <a href="propuestaeducativa.html#academico"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Académica</a>
+              <a href="propuestaeducativa.html#extra-catedra"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Extra-Cátedra</a>
+              <a href="propuestaeducativa.html#pastoral"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Pastoral</a>
+            </div>
+          </li>
+
+          <!-- Actualidad -->
+          <li>
+            <a href="actualidad.html" class="block py-2 text-lg font-bold text-slate-800 dark:text-white">Actualidad</a>
+          </li>
+
+          <!-- Financiamiento -->
+          <li>
+            <button
+              class="mobile-dropdown-btn w-full flex items-center justify-between py-2 text-lg font-bold text-slate-800 dark:text-white"
+              data-target="m-financiamiento">
+              Financiamiento
+              <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+            </button>
+            <div id="m-financiamiento"
+              class="hidden pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
+              <a href="financiamiento.html#aportes-familiares"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Aportes Familiares</a>
+              <a href="financiamiento.html#comunidades"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Aportes Comunidades</a>
+              <a href="financiamiento.html#proyectos"
+                class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary font-semibold">Proyectos de
+                Financiamiento</a>
+              <div class="pl-4 space-y-2 mt-2">
+                <a href="financiamiento.html#beca"
+                  class="block py-1 text-sm text-slate-500 hover:text-primary italic">Beca un Gonzaga</a>
+                <a href="financiamiento.html#responsable"
+                  class="block py-1 text-sm text-slate-500 hover:text-primary italic">Soy Gonzaga Responsable</a>
+                <a href="financiamiento.html#valiente"
+                  class="block py-1 text-sm text-slate-500 hover:text-primary italic">Soy Gonzaga Valiente</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Vínculate -->
+          <li>
+            <button
+              class="mobile-dropdown-btn w-full flex items-center justify-between py-2 text-lg font-bold text-slate-800 dark:text-white"
+              data-target="m-vinculate">
+              Vínculate
+              <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+            </button>
+            <div id="m-vinculate" class="hidden pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
+              <a href="exalumnos.html" class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Red de
+                Exalumnos</a>
+              <a href="voluntarios.html" class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Red de
+                Voluntarios</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800 text-center">
+          <a class="w-full bg-primary hover:bg-blue-800 text-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg"
+            href="#">
+            <span class="material-symbols-outlined">favorite</span>
+            DONAR AQUÍ
+          </a>
+          <p class="mt-6 text-sm text-slate-500">Colegio Gonzaga © 2026</p>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="pt-[72px]">
+    <section class="relative h-[90vh] min-h-[600px] overflow-hidden bg-slate-900">
+      <div class="slide active absolute inset-0 flex-col items-center justify-center">
+        <div class="absolute inset-0">
+          <img alt="Colegio Gonzaga Campus" class="w-full h-full object-cover" src="assets/slide1.jpeg" />
+          <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div
+          class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+          <h2 class="text-5xl md:text-8xl font-serif italic mb-4 drop-shadow-2xl">
+            Nunca Solos
+          </h2>
+          <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto opacity-95 mb-10 drop-shadow-md">
+            80 años caminando juntos en la fe, la excelencia académica y el
+            servicio.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="bg-white text-primary px-8 py-4 rounded-full font-bold transition-all hover:scale-105 shadow-xl">
+              Apoyar a un Gonzaga
+            </button>
+            <button
+              class="bg-white/10 backdrop-blur-md border border-white/40 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-white/20">
+              Propuesta Educativa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slide absolute inset-0 flex-col items-center justify-center">
+        <div class="absolute inset-0">
+          <img alt="Estudiantes en el Colegio" class="w-full h-full object-cover" src="assets/slide2.jpeg" />
+          <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div
+          class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+          <h2 class="text-5xl md:text-7xl font-serif italic mb-4 drop-shadow-2xl">
+            Construye Futuro
+          </h2>
+          <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto opacity-95 mb-10 drop-shadow-md">
+            Tu aporte construye futuro. Invertir en un Gonzaga es invertir en
+            el país.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="bg-white text-primary px-8 py-4 rounded-full font-bold transition-all hover:scale-105 shadow-xl">
+              Apoyar a un Gonzaga
+            </button>
+            <button
+              class="bg-white/10 backdrop-blur-md border border-white/40 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-white/20">
+              Propuesta Educativa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slide absolute inset-0 flex-col items-center justify-center">
+        <div class="absolute inset-0">
+          <img alt="Comunidad Gonzaga" class="w-full h-full object-cover" src="assets/slide3.jpeg" />
+          <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div
+          class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+          <h2 class="text-5xl md:text-7xl font-serif italic mb-4 drop-shadow-2xl">
+            Sé parte del impacto
+          </h2>
+          <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto opacity-95 mb-10 drop-shadow-md">
+            La historia del Gonzaga la sigues escribiendo tú.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="bg-white text-primary px-8 py-4 rounded-full font-bold transition-all hover:scale-105 shadow-xl">
+              Apoyar a un Gonzaga
+            </button>
+            <button
+              class="bg-white/10 backdrop-blur-md border border-white/40 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-white/20">
+              Propuesta Educativa
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-arrow left-6 lg:left-12" onclick="prevSlide()">
+        <span class="material-symbols-outlined text-3xl">chevron_left</span>
+      </button>
+      <button class="carousel-arrow right-6 lg:right-12" onclick="nextSlide()">
+        <span class="material-symbols-outlined text-3xl">chevron_right</span>
+      </button>
+      <div
+        class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4 z-20 bg-black/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/20">
+        <div class="w-3.5 h-3.5 rounded-full bg-white ring-4 ring-white/10 cursor-pointer transition-all duration-300">
+        </div>
+        <div class="w-3.5 h-3.5 rounded-full bg-white/30 hover:bg-white/50 cursor-pointer transition-all duration-300">
+        </div>
+        <div class="w-3.5 h-3.5 rounded-full bg-white/30 hover:bg-white/50 cursor-pointer transition-all duration-300">
+        </div>
+      </div>
+    </section>
+    <section class="pt-24 pb-12 bg-white dark:bg-slate-900" id="actualidad">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between mb-12">
+          <div>
+            <h3 class="text-4xl font-extrabold text-primary dark:text-white mb-3">
+              Vida Institucional
+            </h3>
+            <p class="text-slate-500 dark:text-slate-400 mt-1">
+              Síguenos en Instagram @ColegioGonzaga
+            </p>
+          </div>
+          <a class="text-primary dark:text-blue-400 font-bold flex items-center gap-1 hover:underline text-sm group"
+            href="#">
+            Ver perfil
+            <span
+              class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+          <div class="aspect-square relative group overflow-hidden rounded-2xl insta-hover shadow-lg">
+            <img alt="Student project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="assets/instagram1.png" />
+            <div
+              class="overlay absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 transition-opacity">
+              <span class="material-symbols-outlined text-white text-4xl">favorite</span>
+            </div>
+          </div>
+          <div class="aspect-square relative group overflow-hidden rounded-2xl insta-hover shadow-lg">
+            <img alt="Art class"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="assets/instagram2.png" />
+            <div
+              class="overlay absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 transition-opacity">
+              <span class="material-symbols-outlined text-white text-4xl">favorite</span>
+            </div>
+          </div>
+          <div class="aspect-square relative group overflow-hidden rounded-2xl insta-hover shadow-lg">
+            <img alt="Library"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="assets/instagram3.png" />
+            <div
+              class="overlay absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 transition-opacity">
+              <span class="material-symbols-outlined text-white text-4xl">favorite</span>
+            </div>
+          </div>
+          <div class="aspect-square relative group overflow-hidden rounded-2xl insta-hover shadow-lg">
+            <img alt="Sport event"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="assets/instagram4.png" />
+            <div
+              class="overlay absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 transition-opacity">
+              <span class="material-symbols-outlined text-white text-4xl">favorite</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid lg:grid-cols-[40%_60%] gap-0 items-stretch border border-slate-200 dark:border-slate-800 rounded-[2.5rem] overflow-hidden shadow-sm mb-16">
+          <div
+            class="bg-slate-50 dark:bg-slate-800/40 p-8 lg:p-12 flex flex-col items-center text-center justify-center relative group">
+            <div class="absolute top-0 left-0 w-full h-1 bg-secondary opacity-20"></div>
+            <div class="relative mb-6">
+              <div
+                class="w-28 h-28 bg-white dark:bg-slate-800 rounded-3xl flex items-center justify-center text-primary dark:text-blue-400 shadow-xl group-hover:scale-105 transition-transform duration-500">
+                <span class="material-symbols-outlined text-6xl">podcasts</span>
+              </div>
+              <div
+                class="absolute -bottom-3 -right-3 w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-white border-4 border-white dark:border-slate-800">
+                <span class="material-symbols-outlined text-sm">mic</span>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span
+                class="inline-block px-4 py-1.5 rounded-full bg-secondary text-white text-[10px] font-bold uppercase tracking-[0.2em] mb-2">
+                Próximamente
+              </span>
+              <h3 class="text-4xl font-extrabold text-primary dark:text-white mb-3">
+                Radio Gonzaga
+              </h3>
+            </div>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed max-w-sm text-lg font-light italic">
+              "Un nuevo espacio para la voz de nuestra comunidad. Sintoniza la
+              creatividad, el debate y la música de nuestros estudiantes."
+            </p>
+            <div class="mt-6 flex gap-4">
+              <div class="w-12 h-1 bg-primary/20 rounded-full"></div>
+              <div class="w-12 h-1 bg-secondary/40 rounded-full"></div>
+              <div class="w-12 h-1 bg-primary/20 rounded-full"></div>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-slate-900 p-8 lg:p-12 flex flex-col justify-center">
+            <div class="space-y-6">
+              <div class="group">
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
+                  15 Octubre, 2024
+                </p>
+                <h4 class="text-2xl md:text-3xl font-extrabold text-primary dark:text-blue-400 leading-tight mb-3">
+                  Celebración del 80 Aniversario del Colegio Gonzaga
+                </h4>
+                <a class="inline-flex items-center text-secondary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform"
+                  href="#">
+                  Leer más
+                  <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
+                </a>
+              </div>
+              <div class="group">
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
+                  10 Octubre, 2024
+                </p>
+                <h4 class="text-2xl md:text-3xl font-extrabold text-primary dark:text-blue-400 leading-tight mb-3">
+                  Nuevos Laboratorios de Ciencia e Innovación
+                </h4>
+                <a class="inline-flex items-center text-secondary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform"
+                  href="#">
+                  Leer más
+                  <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
+                </a>
+              </div>
+              <div class="group">
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
+                  28 Septiembre, 2024
+                </p>
+                <h4 class="text-2xl md:text-3xl font-extrabold text-primary dark:text-blue-400 leading-tight mb-3">
+                  Encuentro Deportivo Intercolegial 2024
+                </h4>
+                <a class="inline-flex items-center text-secondary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform"
+                  href="#">
+                  Leer más
+                  <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 text-center">
+          <p class="text-slate-600 dark:text-slate-400 mb-3 leading-snug font-normal max-w-3xl mx-auto">
+            Explora nuestra galería de momentos, sintoniza nuestra radio
+            escolar y entérate de las últimas noticias de la comunidad.
+          </p>
+          <div class="flex justify-center">
+            <a class="bg-primary hover:bg-blue-800 text-white px-10 py-3 rounded-full font-bold transition-all shadow-xl hover:shadow-primary/30 hover:-translate-y-1 text-base uppercase tracking-widest inline-flex items-center gap-2"
+              href="#">
+              Ver Actualidad
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Propuesta Educativa -->
+    <section class="py-12 bg-slate-50 dark:bg-slate-900">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-blue-400 mb-4">
+            Propuesta Educativa
+          </h2>
+          <p class="text-lg text-slate-600 dark:text-slate-400">
+            Excelencia integral para formar hombres y mujeres para los demás.
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="flex justify-center gap-8 md:gap-16 mb-16 border-b border-slate-200 dark:border-slate-700">
+          <button
+            class="proposal-tab active pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
+            data-tab="academico">
+            Académico
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-100 transition-transform"></div>
+          </button>
+          <button
+            class="proposal-tab pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
+            data-tab="musica">
+            Música
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-0 transition-transform origin-left">
+            </div>
+          </button>
+          <button
+            class="proposal-tab pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
+            data-tab="deportes">
+            Deportes
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-0 transition-transform origin-left">
+            </div>
+          </button>
+          <button
+            class="proposal-tab pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
+            data-tab="pastoral">
+            Pastoral
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-0 transition-transform origin-left">
+            </div>
+          </button>
+        </div>
+
+        <!-- Contenido de Tabs -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Académico -->
+          <div class="proposal-content active" data-content="academico">
+            <img src="assets/propuestaeducativa.jpeg" alt="Excelencia Académica"
+              class="w-full rounded-3xl shadow-lg object-cover" />
+          </div>
+          <div class="proposal-content active" data-content="academico">
+            <span class="text-primary font-bold uppercase text-sm tracking-wider">
+              Formación de Excelencia
+            </span>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
+              Excelencia Académica
+            </h3>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              Promovemos un aprendizaje profundo y riguroso que prepara a
+              nuestros estudiantes para los retos globales con una visión
+              crítica y humanista. Nuestro enfoque integra metodologías
+              innovadoras, pensamiento análitico y valores de servicio.
+            </p>
+            <button
+              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
+              Saber más
+              <span class="material-symbols-outlined text-lg">arrow_right</span>
+            </button>
+          </div>
+
+          <!-- Música -->
+          <div class="proposal-content hidden" data-content="musica">
+            <img src="assets/musica.jpg" alt="Formación Musical" class="w-full rounded-3xl shadow-lg object-cover" />
+          </div>
+          <div class="proposal-content hidden" data-content="musica">
+            <span class="text-primary font-bold uppercase text-sm tracking-wider">
+              Expresión Artística
+            </span>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
+              Formación Musical
+            </h3>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              La música es un pilar fundamental en nuestra propuesta
+              educativa. Desarrollamos talentos musicales, promovemos la
+              expresión creativa y fortalecemos valores de disciplina, trabajo
+              en equipo y sensibilidad artística.
+            </p>
+            <button
+              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
+              Saber más
+              <span class="material-symbols-outlined text-lg">arrow_right</span>
+            </button>
+          </div>
+
+          <!-- Deportes -->
+          <div class="proposal-content hidden" data-content="deportes">
+            <img src="assets/deporte.png" alt="Formación Deportiva" class="w-full rounded-3xl shadow-lg object-cover" />
+          </div>
+          <div class="proposal-content hidden" data-content="deportes">
+            <span class="text-primary font-bold uppercase text-sm tracking-wider">
+              Desarrollo Integral
+            </span>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
+              Excelencia en Deportes
+            </h3>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              El deporte desarrolla carácter, liderazgo y espíritu de equipo.
+              Contamos con programas deportivos de excelencia que forman
+              atletas íntegros, comprometidos con el esfuerzo, la disciplina y
+              los valores éticos.
+            </p>
+            <button
+              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
+              Saber más
+              <span class="material-symbols-outlined text-lg">arrow_right</span>
+            </button>
+          </div>
+
+          <!-- Pastoral -->
+          <div class="proposal-content hidden" data-content="pastoral">
+            <img src="assets/pastoral.jpeg" alt="Formación Pastoral"
+              class="w-full rounded-3xl shadow-lg object-cover" />
+          </div>
+          <div class="proposal-content hidden" data-content="pastoral">
+            <span class="text-primary font-bold uppercase text-sm tracking-wider">
+              Fe y Compromiso
+            </span>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
+              Pastoral Educativa
+            </h3>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              Basada en los valores del Evangelio y la Compañía de Jesús,
+              nuestra pastoral forma ciudadanos comprometidos con la justicia
+              social, el bien común y el servicio desinteresado a los demás.
+            </p>
+            <button
+              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
+              Saber más
+              <span class="material-symbols-outlined text-lg">arrow_right</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-slate-900 border-y border-gray-100 dark:border-slate-800 overflow-hidden">
+      <div class="container mx-auto px-6 pt-12 pb-12">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Texto -->
+          <div class="order-2 lg:order-1">
+            <span
+              class="text-primary dark:text-blue-400 font-bold uppercase text-sm tracking-wider mb-4 inline-block">Proyectos
+              de
+              Financiamiento</span>
+            <h2 class="text-4xl font-extrabold text-primary dark:text-white mb-3">
+              Tu aporte <br /><span class="text-primary dark:text-white">transforma vidas</span>
+            </h2>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+              Invertir en el Colegio Gonzaga es asegurar que la excelencia
+              educativa llegue a quienes más lo necesitan. Cada contribución
+              fortalece el futuro de cientos de jóvenes zulianos.
+            </p>
+
+            <p class="text-sm text-slate-700 dark:text-slate-200 font-medium mb-3">
+              Nuestra meta es becar el 10% de los estudiantes Gonzaga.
+            </p>
+
+            <!-- Barra de progreso (10%) -->
+            <div class="w-full max-w-md">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm text-slate-500 dark:text-slate-400">Meta: Becas</span>
+                <span class="text-sm font-bold text-slate-700 dark:text-slate-200">40%</span>
+              </div>
+              <div class="w-full bg-slate-200/30 dark:bg-slate-700/50 rounded-full h-4 overflow-hidden"
+                role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                aria-label="Porcentaje de becas logrado">
+                <div class="h-4 bg-blue-500 dark:bg-blue-400 rounded-full" style="width: 40%"></div>
+              </div>
+              <div class="mt-3 text-xs text-slate-500 dark:text-slate-400">
+                Progreso actual:
+                <span class="font-medium text-slate-700 dark:text-slate-200">40%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrusel de Campañas -->
+          <div class="order-1 lg:order-2">
+            <div class="relative bg-transparent p-8 rounded-3xl">
+              <div class="overflow-hidden rounded-3xl shadow-2xl">
+                <div class="fund-carousel flex transition-transform duration-500 ease-in-out"
+                  style="transform: translateX(0%)">
+                  <!-- Slide 1 -->
+                  <div
+                    class="fund-slide min-w-full p-8 min-h-[300px] flex flex-col justify-between relative overflow-hidden"
+                    style="
+                        background-image: url('assets/beca1.png');
+                        background-size: cover;
+                        background-position: center;
+                      ">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="relative z-10">
+                      <h3 class="text-2xl font-bold text-white mb-3">
+                        Beca un Gonzaga
+                      </h3>
+                      <p class="text-white/90">
+                        Garantiza la escolaridad completa de un estudiante con
+                        talento y compromiso.
+                      </p>
+                    </div>
+                    <button
+                      class="relative z-10 mt-6 bg-white text-primary font-bold px-6 py-2 rounded-full inline-flex items-center gap-2 hover:gap-3 transition-all hover:bg-slate-100 min-w-[140px] w-fit">
+                      Saber más
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                  </div>
+                  <!-- Slide 4 -->
+                  <div
+                    class="fund-slide min-w-full p-8 min-h-[300px] flex flex-col justify-between relative overflow-hidden"
+                    style="
+                        background-image: url('assets/red.jpeg');
+                        background-size: cover;
+                        background-position: center;
+                      ">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="relative z-10">
+                      <h3 class="text-2xl font-bold text-white mb-3">
+                        Red de Exalumnos
+                      </h3>
+                      <p class="text-white/90">
+                        Conecta con antiguos alumnos para mentoría, redes y
+                        apoyo a proyectos.
+                      </p>
+                    </div>
+                    <button
+                      class="relative z-10 mt-6 bg-white text-primary font-bold px-6 py-2 rounded-full inline-flex items-center gap-2 hover:gap-3 transition-all hover:bg-slate-100 min-w-[140px] w-fit">
+                      Saber más
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                  </div>
+
+                  <!-- Slide 5 -->
+                  <div
+                    class="fund-slide min-w-full p-8 min-h-[300px] flex flex-col justify-between relative overflow-hidden"
+                    style="
+                        background-image: url('assets/vol.jpeg');
+                        background-size: cover;
+                        background-position: center;
+                      ">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="relative z-10">
+                      <h3 class="text-2xl font-bold text-white mb-3">
+                        Red de Voluntarios
+                      </h3>
+                      <p class="text-white/90">
+                        Únete como voluntario para apoyar actividades y
+                        programas comunitarios.
+                      </p>
+                    </div>
+                    <button
+                      class="relative z-10 mt-6 bg-white text-primary font-bold px-6 py-2 rounded-full inline-flex items-center gap-2 hover:gap-3 transition-all hover:bg-slate-100 min-w-[140px] w-fit">
+                      Saber más
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div
+                    class="fund-slide min-w-full p-8 min-h-[300px] flex flex-col justify-between relative overflow-hidden"
+                    style="
+                        background-image: url('assets/beca2.png');
+                        background-size: cover;
+                        background-position: center;
+                      ">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="relative z-10">
+                      <h3 class="text-2xl font-bold text-white mb-3">
+                        Soy Gonzaga Responsable
+                      </h3>
+                      <p class="text-white/90">
+                        Apoya la infraestructura y mejora de laboratorios para
+                        la excelencia académica.
+                      </p>
+                    </div>
+                    <button
+                      class="relative z-10 mt-6 bg-white text-primary font-bold px-6 py-2 rounded-full inline-flex items-center gap-2 hover:gap-3 transition-all hover:bg-slate-100 min-w-[140px] w-fit">
+                      Saber más
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div
+                    class="fund-slide min-w-full p-8 min-h-[300px] flex flex-col justify-between relative overflow-hidden"
+                    style="
+                        background-image: url('assets/beca3.png');
+                        background-size: cover;
+                        background-position: center;
+                      ">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="relative z-10">
+                      <h3 class="text-2xl font-bold text-white mb-3">
+                        Soy Gonzaga Valiente
+                      </h3>
+                      <p class="text-white/90">
+                        Fondo de emergencia para familias en situación de
+                        vulnerabilidad económica.
+                      </p>
+                    </div>
+                    <button
+                      class="relative z-10 mt-6 bg-white text-primary font-bold px-6 py-2 rounded-full inline-flex items-center gap-2 hover:gap-3 transition-all hover:bg-slate-100 min-w-[140px] w-fit">
+                      Saber más
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controles -->
+              <div class="flex justify-center gap-4 mt-8">
+                <button id="fund-prev"
+                  class="p-3 rounded-full bg-blue-800 text-white hover:bg-blue-700 transition-colors">
+                  <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <div class="flex items-center gap-2">
+                  <button class="fund-dot h-2 w-8 rounded-full bg-blue-400 cursor-pointer"
+                    aria-label="Ir a la diapositiva 1"></button>
+                  <button class="fund-dot h-2 w-2 rounded-full bg-blue-700 cursor-pointer"
+                    aria-label="Ir a la diapositiva 2"></button>
+                  <button class="fund-dot h-2 w-2 rounded-full bg-blue-700 cursor-pointer"
+                    aria-label="Ir a la diapositiva 3"></button>
+                  <button class="fund-dot h-2 w-2 rounded-full bg-blue-700 cursor-pointer"
+                    aria-label="Ir a la diapositiva 4"></button>
+                  <button class="fund-dot h-2 w-2 rounded-full bg-blue-700 cursor-pointer"
+                    aria-label="Ir a la diapositiva 5"></button>
+                </div>
+                <button id="fund-next"
+                  class="p-3 rounded-full bg-blue-800 text-white hover:bg-blue-700 transition-colors">
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón Donar Aquí -->
+        <div class="flex justify-center mt-8 pt-8">
+          <button
+            class="bg-primary hover:bg-blue-800 text-white px-12 py-4 rounded-full font-bold transition-all shadow-xl hover:shadow-primary/30 hover:-translate-y-1 text-lg flex items-center gap-2">
+            Donar Aquí
+            <span class="material-symbols-outlined">favorite</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        const wrapper = document.querySelector(".fund-carousel");
+        const slides = document.querySelectorAll(".fund-slide");
+        const dots = document.querySelectorAll(".fund-dot");
+        let index = 0;
+        function show(i) {
+          index = (i + slides.length) % slides.length;
+          wrapper.style.transform = `translateX(-${index * 100}%)`;
+          dots.forEach((d, di) => {
+            if (di === index) {
+              d.className =
+                "fund-dot h-2 rounded-full w-8 bg-blue-400 cursor-pointer";
+            } else {
+              d.className =
+                "fund-dot h-2 rounded-full w-2 bg-blue-700 cursor-pointer";
+            }
+          });
+        }
+
+        // habilitar navegación por puntos (clic y teclado)
+        dots.forEach((dot, di) => {
+          dot.addEventListener("click", () => show(di));
+          dot.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              show(di);
+            }
+          });
+        });
+
+        document
+          .getElementById("fund-prev")
+          .addEventListener("click", () => show(index - 1));
+        document
+          .getElementById("fund-next")
+          .addEventListener("click", () => show(index + 1));
+        setInterval(() => show(index + 1), 8000);
+        show(0);
+      })();
+    </script>
+    <section class="py-12 bg-slate-50 dark:bg-slate-950">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-8">
+          <h2 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
+            Comunidad <span class="text-primary">Gonzaga</span>
+          </h2>
+          <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            Herramientas digitales exclusivas para el personal docente,
+            administrativo y de servicios de nuestra institución.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-6">
+          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
+            href="#">
+            <div
+              class="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl">school</span>
+            </div>
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Aula Virtual</h5>
+              <p class="text-sm text-slate-500">Moodle &amp; Recursos</p>
+            </div>
+          </a>
+          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
+            href="#">
+            <div
+              class="w-16 h-16 rounded-2xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl">badge</span>
+            </div>
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Profesores &amp; Personal</h5>
+              <p class="text-sm text-slate-500">INSIEM &amp; Correo</p>
+            </div>
+          </a>
+          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
+            href="#">
+            <div
+              class="w-16 h-16 rounded-2xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl">mail</span>
+            </div>
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Correo Electrónico</h5>
+              <p class="text-sm text-slate-500">Contacto Oficial</p>
+            </div>
+          </a>
+          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
+            href="#">
+            <div
+              class="w-16 h-16 rounded-2xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl">event_note</span>
+            </div>
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Asistencia</h5>
+              <p class="text-sm text-slate-500">Control Horario</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Aliados -->
+    <section class="py-20 bg-white dark:bg-slate-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-center text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
+          Nunca solos ...
+          <span class="text-primary block text-2xl md:text-3xl mt-2">Trabajamos en alianza con</span>
+        </h2>
+        <p class="text-center text-slate-600 dark:text-slate-400 mb-16 text-lg">
+          Colaboramos con importantes organizaciones para fortalecer nuestro
+          impacto educativo
+        </p>
+
+        <div class="relative overflow-hidden w-full">
+          <div class="flex animate-marquee gap-20 items-center min-w-max hover:[animation-play-state:paused]">
+            <!-- First set of logos -->
+            <div class="flex gap-20 items-center flex-shrink-0">
+              <img src="assets/logoalsi.png" alt="ALSI Foundation"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoasc.png" alt="ASC"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoavec.png" alt="AVEC"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logocerpe.png" alt="CERPE"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logohuellas.png" alt="Huellas"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logojesuita.png" alt="Compañía de Jesús"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoraiz.png" alt="RAIZ"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoucab.png" alt="UCAB"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+            </div>
+            <!-- Second set of logos for infinite effect -->
+            <div class="flex gap-20 items-center flex-shrink-0">
+              <img src="assets/logoalsi.png" alt="ALSI Foundation"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoasc.png" alt="ASC"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoavec.png" alt="AVEC"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logocerpe.png" alt="CERPE"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logohuellas.png" alt="Huellas"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logojesuita.png" alt="Compañía de Jesús"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoraiz.png" alt="RAIZ"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+              <img src="assets/logoucab.png" alt="UCAB"
+                class="h-20 w-auto object-contain hover:scale-110 transition-transform duration-300 dark:brightness-0 dark:invert dark:opacity-80 dark:hover:opacity-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="py-20 bg-background-light dark:bg-background-dark">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-blue-400 mb-4">
+            Preguntas Frecuentes
+          </h2>
+          <p class="text-lg text-slate-600 dark:text-slate-400">
+            Aquí resolvemos tus dudas más comunes sobre admisiones.
+          </p>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="max-w-3xl mx-auto space-y-4">
+          <!-- Pregunta 1 -->
+          <div class="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <button
+              class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+              <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
+                ¿Cuáles son los requisitos de inscripción?
+              </span>
+              <span
+                class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
+                chevron_right
+              </span>
+            </button>
+            <div class="faq-content hidden overflow-hidden">
+              <div
+                class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
+                <p>
+                  Para inscribirse en el Colegio Gonzaga, es necesario cumplir
+                  con los siguientes requisitos:
+                </p>
+                <ul class="list-disc list-inside mt-3 space-y-2">
+                  <li>Tener la edad correspondiente al nivel solicitado</li>
+                  <li>Presentar récords académicos de años anteriores</li>
+                  <li>Aprobar la evaluación académica y pedagógica</li>
+                  <li>Entrevista con la familia y el estudiante</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div class="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <button
+              class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+              <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
+                ¿Qué documentos necesito presentar?
+              </span>
+              <span
+                class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
+                chevron_right
+              </span>
+            </button>
+            <div class="faq-content hidden overflow-hidden">
+              <div
+                class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
+                <p>Debes presentar los siguientes documentos:</p>
+                <ul class="list-disc list-inside mt-3 space-y-2">
+                  <li>Cédula de identidad del estudiante</li>
+                  <li>Partida de nacimiento ampliada</li>
+                  <li>Récords académicos de los últimos 2 años</li>
+                  <li>Carnet de vacunación actualizado</li>
+                  <li>Fotocopia de cédulas de representantes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div class="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <button
+              class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+              <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
+                ¿Cómo puedo pagar la matrícula?
+              </span>
+              <span
+                class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
+                chevron_right
+              </span>
+            </button>
+            <div class="faq-content hidden overflow-hidden">
+              <div
+                class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
+                <p>
+                  Contamos con diversas opciones de pago para mayor comodidad:
+                </p>
+                <ul class="list-disc list-inside mt-3 space-y-2">
+                  <li>Pago en efectivo o transferencia bancaria</li>
+                  <li>Planes de financiamiento en cuotas</li>
+                  <li>Descuentos por hermanos o referidos</li>
+                  <li>Becas parciales y completas según disponibilidad</li>
+                </ul>
+                <p class="mt-3">
+                  Contáctanos en +58 422-6410505 para más información.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 4 -->
+          <div class="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <button
+              class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+              <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
+                ¿Hay becas disponibles?
+              </span>
+              <span
+                class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
+                chevron_right
+              </span>
+            </button>
+            <div class="faq-content hidden overflow-hidden">
+              <div
+                class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
+                <p>
+                  Sí, contamos con un programa de becas que se asignan según:
+                </p>
+                <ul class="list-disc list-inside mt-3 space-y-2">
+                  <li>Excelencia académica y disciplinaria</li>
+                  <li>Condición socioeconómica de la familia</li>
+                  <li>Desempeño deportivo o artístico destacado</li>
+                  <li>Necesidades especiales de inclusión</li>
+                </ul>
+                <p class="mt-3">
+                  Las becas se otorgan durante el período de preinscripción.
+                  Consulta con Admisiones sobre los requisitos específicos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-primary pt-20 pb-10 text-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12 mb-20">
+        <div class="col-span-1 md:col-span-1">
+          <div class="flex items-center gap-3 mb-6">
+            <img alt="Logo Colegio Gonzaga" class="h-20 w-auto" src="assets/LogoColegioGonzaga.png" />
+          </div>
+          <p class="text-blue-200 text-sm leading-relaxed mb-6">
+            Formación integral basada en los valores de la Compañía de Jesús,
+            comprometidos con la excelencia académica.
+          </p>
+          <div class="flex gap-4">
+            <!-- Instagram -->
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+              href="https://instagram.com/colegiogonzagamcbo" target="_blank" aria-label="Instagram">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <!-- WhatsApp -->
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+              href="https://wa.me/584226410505" target="_blank" aria-label="WhatsApp">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.438-9.89 9.886-.001 2.13.614 3.988 1.627 5.49l-.999 3.647 3.935-1.038zm11.233-7.114c-.31-.155-1.829-.903-2.112-1.006-.283-.103-.49-.155-.696.155-.206.31-.798 1.006-.978 1.212-.181.206-.361.232-.671.077-.309-.155-1.305-.481-2.486-1.534-.919-.82-1.539-1.832-1.719-2.141-.181-.309-.019-.477.135-.631.139-.139.309-.361.464-.541.155-.181.206-.309.309-.515.103-.206.052-.387-.026-.541-.077-.155-.696-1.676-.953-2.296-.25-.606-.503-.524-.696-.534-.181-.01-.387-.01-.593-.01-.206 0-.541.077-.825.387-.284.31-1.082 1.057-1.082 2.578 0 1.52 1.108 2.99 1.263 3.2 0 .21 2.182 3.332 5.286 4.67.738.318 1.314.508 1.763.65.74.235 1.414.201 1.946.122.592-.087 1.829-.747 2.087-1.469.258-.722.258-1.34.181-1.469-.077-.129-.283-.206-.593-.361z" />
+              </svg>
+            </a>
+            <!-- Radio -->
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+              href="#" aria-label="Radio">
+              <span class="material-symbols-outlined text-xl">radio</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h6 class="font-bold text-lg mb-6">Enlaces Rápidos</h6>
+          <ul class="space-y-4 text-blue-200 text-sm">
+            <li>
+              <a class="hover:text-white transition-colors" href="#">Admisiones</a>
+            </li>
+            <li>
+              <a class="hover:text-white transition-colors" href="#">Tu Aporte Familiar</a>
+            </li>
+            <li>
+              <a class="hover:text-white transition-colors" href="#">Pastoral Educativa</a>
+            </li>
+            <li>
+              <a class="hover:text-white transition-colors" href="#">Beca un Gonzaga</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="font-bold text-lg mb-6">Contacto</h6>
+          <ul class="space-y-4 text-blue-200 text-sm mb-8">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-blue-400">location_on</span>
+              <span>Av. 35, Maracaibo, Edo. Zulia.</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-blue-400">phone</span>
+              <span>+58 422-6410505</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-blue-400">mail</span>
+              <span>contacto@colegiogonzaga.edu.ve</span>
+            </li>
+          </ul>
+          <a class="inline-flex items-center gap-2 bg-secondary hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-secondary/30"
+            href="financiamiento.html">
+            <span class="material-symbols-outlined text-xl">favorite</span>
+            Donar Aquí
+          </a>
+        </div>
+
+      </div>
+      <div
+        class="border-t border-white/10 pt-10 flex flex-col md:flex-row items-center justify-between text-xs text-blue-300 gap-4">
+        <p>
+          © 2026 Colegio Gonzaga. Todo el contenido de este portal puede ser
+          utilizado citando la fuente.
+        </p>
+        <div class="flex gap-6">
+          <a class="hover:text-white" href="#">Política de Privacidad</a>
+          <a class="hover:text-white" href="#">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // FAQ Accordion functionality
+    const faqBtns = document.querySelectorAll(".faq-btn");
+
+    faqBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector(".faq-icon");
+
+        // Close other open FAQs
+        faqBtns.forEach((otherBtn) => {
+          if (otherBtn !== btn) {
+            const otherContent = otherBtn.nextElementSibling;
+            const otherIcon = otherBtn.querySelector(".faq-icon");
+            otherContent.classList.add("hidden");
+            otherIcon.style.transform = "rotate(0deg)";
+          }
+        });
+
+        // Toggle current FAQ
+        content.classList.toggle("hidden");
+        if (content.classList.contains("hidden")) {
+          icon.style.transform = "rotate(0deg)";
+        } else {
+          icon.style.transform = "rotate(90deg)";
+        }
+      });
+    });
+
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const htmlElement = document.documentElement;
+    themeToggleBtn.addEventListener("click", () => {
+      if (htmlElement.classList.contains("dark")) {
+        htmlElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      } else {
+        htmlElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+    if (
+      localStorage.getItem("theme") === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      htmlElement.classList.add("dark");
+    } else {
+      htmlElement.classList.remove("dark");
+    }
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".absolute.bottom-10 .w-3\\.5");
+    function showSlide(index) {
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+      currentSlide = index;
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        dots[i].classList.replace("bg-white", "bg-white/30");
+        dots[i].classList.remove("ring-4", "ring-white/10");
+        if (i === index) {
+          slide.classList.add("active");
+          dots[i].classList.replace("bg-white/30", "bg-white");
+          dots[i].classList.add("ring-4", "ring-white/10");
+        }
+      });
+    }
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        showSlide(index);
+      });
+    });
+    setInterval(nextSlide, 8000);
+
+    // Propuesta Educativa Tabs
+    const proposalTabs = document.querySelectorAll(".proposal-tab");
+    const proposalContents = document.querySelectorAll(".proposal-content");
+
+    proposalTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const tabName = tab.getAttribute("data-tab");
+
+        // Remove active class from all tabs and contents
+        proposalTabs.forEach((t) => {
+          t.classList.remove("active");
+          t.classList.add("text-slate-600", "dark:text-slate-400");
+          t.classList.remove("text-primary", "dark:text-blue-400");
+          const underline = t.querySelector("div");
+          if (underline) underline.style.transform = "scaleX(0)";
+        });
+
+        proposalContents.forEach((content) => {
+          content.classList.add("hidden");
+          content.classList.remove("active");
+        });
+
+        // Add active class to clicked tab and corresponding content
+        tab.classList.add("active");
+        tab.classList.remove("text-slate-600", "dark:text-slate-400");
+        tab.classList.add("text-primary", "dark:text-blue-400");
+        const underline = tab.querySelector("div");
+        if (underline) underline.style.transform = "scaleX(100%)";
+
+
+        proposalContents.forEach((content) => {
+          if (content.getAttribute("data-content") === tabName) {
+            content.classList.remove("hidden");
+            content.classList.add("active");
+          }
+        });
+      });
+    });
+
+    // Mobile Menu Logic
+    (function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileOverlay = document.getElementById('mobile-menu-overlay');
+      const mobileContent = document.getElementById('mobile-menu-content');
+      const openBtn = document.getElementById('mobile-menu-open');
+      const closeBtn = document.getElementById('mobile-menu-close');
+      const dropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+
+      function openMenu() {
+        mobileMenu.classList.remove('invisible');
+        setTimeout(() => {
+          mobileOverlay.classList.remove('opacity-0');
+          mobileContent.classList.remove('translate-x-0');
+          mobileContent.classList.remove('translate-x-full');
+        }, 10);
+        document.body.style.overflow = 'hidden'; // Prevent scroll
+      }
+
+      function closeMenu() {
+        mobileOverlay.classList.add('opacity-0');
+        mobileContent.classList.add('translate-x-full');
+        document.body.style.overflow = ''; // Restore scroll
+        setTimeout(() => {
+          mobileMenu.classList.add('invisible');
+        }, 300);
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openMenu);
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+      if (mobileOverlay) mobileOverlay.addEventListener('click', closeMenu);
+
+      // Handle dropdowns
+      dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          const target = document.getElementById(targetId);
+          const icon = btn.querySelector('.material-symbols-outlined');
+
+          if (target) {
+            target.classList.toggle('hidden');
+            if (icon) {
+              icon.style.transform = target.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+          }
+        });
+      });
+
+      // Close menu on link click
+      const links = mobileContent.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+    })();
+  </script>
+</body>
+
+</html>
