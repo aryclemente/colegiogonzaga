@@ -55,6 +55,13 @@
         .dropdown-content {
             display: none;
         }
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 
@@ -208,7 +215,7 @@
                         <span class="material-symbols-outlined hidden dark:block">light_mode</span>
                     </button>
                     <a class="bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg hover:shadow-primary/30 flex items-center gap-2"
-                        href="#">
+                        href="#donar-ahora">
                         <span class="material-symbols-outlined text-sm">favorite</span>
                         Dona Aquí
                     </a>
@@ -218,425 +225,181 @@
     </header>
 
     <main class="pt-[72px]">
-        <!-- Hero Section con Imagen -->
-        <section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <!-- 1. Hero Section: El Propósito -->
+        <section class="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0">
-                <img src="assets/ninos3.jpeg" alt="Impacto Gonzaga" class="w-full h-full object-cover">
+                <img src="assets/ninos3.jpeg" alt="Sede San Luis" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-slate-900/60 hero-video-overlay"></div>
             </div>
             <div class="container mx-auto px-6 relative z-10 text-center text-white">
-                <h2 class="text-secondary font-black text-xl md:text-2xl mb-4 italic tracking-widest">#SomosGonzagas
-                </h2>
-                <h3 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight font-display">Ecosistema de <br><span
-                        class="text-blue-200">Financiamiento</span></h3>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light opacity-90">Transformamos vidas mediante
-                    una educación de excelencia apoyada en nuestra comunidad.</p>
-                <div class="flex justify-center">
-                    <a href="#"
-                        class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-red-600/30 flex items-center gap-2">
+                <h2 class="text-secondary font-black text-xl md:text-2xl mb-4 italic tracking-widest font-serif">Somos Gonzaga Responsables</h2>
+                <h3 class="text-4xl md:text-6xl max-w-4xl mx-auto font-extrabold mb-8 leading-tight font-display">Protegemos una obra humana que transforma vidas desde hace más de 50 años.</h3>
+                <div class="flex justify-center mt-10">
+                    <a href="#donar-ahora" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-red-600/30 flex items-center gap-2 hover:scale-105">
                         <span class="material-symbols-outlined">favorite</span>
-                        Donar Aquí
+                        Quiero Sumarme
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Tu Aporte Familiar (Versión Compacta Refinada) -->
-        <section id="aportes-familiares"
-            class="py-20 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 transition-all duration-500">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <!-- Heading -->
-                    <div class="text-center mb-12">
-                        <h3 class="text-3xl font-extrabold text-primary dark:text-white mb-2">
-                            Corresponsabilidad: <span class="text-secondary">Tu Aporte Familiar</span>
-                        </h3>
-                        <p
-                            class="text-slate-500 dark:text-slate-400 text-sm max-w-2xl mx-auto font-light leading-relaxed">
-                            Bajo el modelo de convenio con el Estado y Fe y Alegría, tu aporte sostiene la calidad que
-                            la subvención no cubre.
-                        </p>
-                    </div>
-
-                    <!-- Unified Panel -->
-                    <div
-                        class="grid lg:grid-cols-2 gap-0 rounded-[3rem] overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl">
-
-                        <!-- Lado Izquierdo: Transparencia (Carrusel) -->
-                        <div class="relative h-[450px] lg:h-auto overflow-hidden group">
-                            <div class="flex h-full transition-transform duration-700 ease-in-out"
-                                id="transparency-track">
-                                <!-- Slide 1: Infraestructura -->
-                                <div class="min-w-full h-full relative">
-                                    <img src="assets/mantenimiento.jpeg" alt="Infraestructura"
-                                        class="w-full h-full object-cover">
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent">
-                                    </div>
-                                    <div class="absolute bottom-10 left-10 right-10 text-white">
-                                        <h4 class="text-2xl font-bold mb-2">Infraestructura Vital</h4>
-                                        <p class="text-sm font-light opacity-90">Mantenimiento de planta física y
-                                            recuperación de techos.</p>
-                                    </div>
+        <!-- 2. #BecaUnGonzaga (Movida a la posición 2) -->
+        <section id="beca" class="py-24 bg-white dark:bg-slate-900">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="bg-primary rounded-[3rem] p-10 md:p-14 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-800/50 rounded-full blur-3xl -mr-64 -mt-32"></div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                        <div class="text-white">
+                            <h3 class="text-4xl md:text-5xl font-extrabold mb-8 font-display text-white">Beca un Gonzaga</h3>
+                            <p class="text-blue-100 mb-10 text-lg leading-relaxed font-light">Nuestra meta es sostener el fondo de becas para que el <span class="font-bold text-secondary">10% de nuestros estudiantes</span> con excelencia académica y limitaciones económicas puedan formarse en nuestras aulas.</p>
+                            
+                            <div class="flex flex-wrap gap-12">
+                                <div>
+                                    <p class="text-4xl font-bold mb-1 text-white">120+</p>
+                                    <p class="text-[10px] text-blue-300 font-bold uppercase tracking-widest">BECAS ACTIVAS</p>
                                 </div>
-                                <!-- Slide 2: Excelencia -->
-                                <div class="min-w-full h-full relative">
-                                    <img src="assets/beca1.png" alt="Excelencia" class="w-full h-full object-cover">
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent">
-                                    </div>
-                                    <div class="absolute bottom-10 left-10 right-10 text-white">
-                                        <h4 class="text-2xl font-bold mb-2">Excelencia Académica</h4>
-                                        <p class="text-sm font-light opacity-90">Laboratorios equipados y actualización
-                                            de herramientas TIC.</p>
-                                    </div>
+                                <div class="w-px h-16 bg-blue-800/50 hidden sm:block"></div>
+                                <div>
+                                    <p class="text-4xl font-bold mb-1 text-white">$1.2k</p>
+                                    <p class="text-[10px] text-blue-300 font-bold uppercase tracking-widest">COSTO PROMEDIO ANUAL</p>
                                 </div>
-                                <!-- Slide 3: Operatividad -->
-                                <div class="min-w-full h-full relative">
-                                    <img src="assets/administrativos.jpeg" alt="Operatividad"
-                                        class="w-full h-full object-cover">
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent">
-                                    </div>
-                                    <div class="absolute bottom-10 left-10 right-10 text-white">
-                                        <h4 class="text-2xl font-bold mb-2">Operatividad Diaria</h4>
-                                        <p class="text-sm font-light opacity-90">Sostenimiento de servicios básicos para
-                                            el funcionamiento escolar.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Carousel Controls -->
-                            <div
-                                class="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                                <button onclick="moveTransparency(-1)"
-                                    class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center hover:bg-white/40 transition-all">
-                                    <span class="material-symbols-outlined">chevron_left</span>
-                                </button>
-                                <button onclick="moveTransparency(1)"
-                                    class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center hover:bg-white/40 transition-all">
-                                    <span class="material-symbols-outlined">chevron_right</span>
-                                </button>
-                            </div>
-
-                            <!-- Carousel Dots -->
-                            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2" id="transparency-dots">
-                                <div class="w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all active"
-                                    onclick="setTransparency(0)"></div>
-                                <div class="w-2 h-2 rounded-full bg-white/30 cursor-pointer transition-all"
-                                    onclick="setTransparency(1)"></div>
-                                <div class="w-2 h-2 rounded-full bg-white/30 cursor-pointer transition-all"
-                                    onclick="setTransparency(2)"></div>
                             </div>
                         </div>
 
-                        <!-- Lado Derecho: Gestión Humanizada -->
-                        <div
-                            class="p-10 md:p-14 bg-white dark:bg-slate-900 flex flex-col justify-center border-l dark:border-slate-800">
-                            <h4 class="text-xs font-black uppercase tracking-[0.3em] text-secondary mb-8">¿Cómo hacer tu
-                                aporte?</h4>
-
-                            <ul class="space-y-6 mb-12">
-                                <li class="flex items-center gap-4">
-                                    <span
-                                        class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-black text-slate-400">1</span>
-                                    <span class="text-sm font-semibold">Selecciona al Estudiante</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <span
-                                        class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-black text-slate-400">2</span>
-                                    <span class="text-sm font-semibold">Selecciona el Método de Pago</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <span
-                                        class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-black text-slate-400">3</span>
-                                    <span class="text-sm font-semibold">Recibe tu comprobante digital</span>
-                                </li>
-                            </ul>
-
-                            <a href="#"
-                                class="bg-primary hover:bg-blue-800 text-white w-full py-4 rounded-2xl font-bold text-center shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-3 group">
-                                <span
-                                    class="material-symbols-outlined group-hover:rotate-12 transition-transform">payments</span>
-                                Gestionar mi Compromiso
-                            </a>
+                        <div class="bg-white dark:bg-slate-900 rounded-[2rem] p-8 md:p-10 shadow-2xl transform lg:translate-x-4">
+                            <h4 class="text-2xl font-bold text-slate-800 dark:text-white mb-8">Tu impacto hoy</h4>
+                            <div class="space-y-4 mb-8">
+                                <div class="flex justify-between items-center p-5 border border-slate-100 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-800 hover:border-slate-300 transition-colors cursor-pointer group">
+                                    <span class="font-bold text-sm text-slate-700 dark:text-slate-200">Media Beca Mensual</span>
+                                    <span class="font-black text-lg group-hover:text-primary transition-colors text-slate-900 dark:text-white">$50</span>
+                                </div>
+                                <div class="flex justify-between items-center p-5 border-2 border-blue-100 dark:border-primary/40 rounded-2xl bg-white dark:bg-slate-800 cursor-pointer shadow-sm">
+                                    <span class="font-bold text-sm text-primary dark:text-blue-400">Beca Completa Mensual</span>
+                                    <span class="font-black text-lg text-primary dark:text-blue-400">$100</span>
+                                </div>
+                            </div>
+                            <a href="#donar-ahora" class="block w-full text-center bg-secondary hover:bg-red-700 text-white py-4 rounded-xl font-bold shadow-lg shadow-red-500/30 transition-all hover:-translate-y-1">Apadrinar un Alumno</a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Comunidades Educativas -->
-        <section id="comunidades" class="py-24 bg-slate-50 dark:bg-slate-800/20">
-            <div class="container mx-auto px-6">
-                <div class="flex justify-between items-end mb-12">
-                    <div class="text-left">
-                        <h3 class="text-3xl font-extrabold text-primary dark:text-white mb-2">Comunidades Educativas
-                        </h3>
-                        <p class="text-slate-500 font-light">Fortaleciendo la red de apoyo para nuestros alumnos.</p>
-                    </div>
-                    <a href="#"
-                        class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">Buscar
-                        por comunidad <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+        <!-- 3. #SoyGonzagaValiente (Carrusel adaptado) -->
+        <section id="valiente" class="py-24 bg-slate-50 dark:bg-slate-800/20 overflow-hidden">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="text-center mb-16">
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-secondary mb-4 italic block">Proyectos Activos</span>
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-white mb-6">#SoyGonzagaValiente</h3>
+                    <p class="text-slate-500 font-light max-w-2xl mx-auto">Únete a nuestros proyectos de gran impacto que aseguran la excelencia operativa y estructural de nuestra institución.</p>
                 </div>
 
-                <div class="grid lg:grid-cols-3 gap-8">
-                    <!-- Egresados -->
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 shadow-lg">
-                        <span class="material-symbols-outlined text-secondary text-4xl mb-6">history_edu</span>
-                        <h4 class="text-xl font-bold mb-4">Asociación de Egresados</h4>
-                        <p class="text-sm text-slate-500 font-light mb-6">Mantenemos el vínculo con quienes se formaron
-                            en estas aulas.</p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                Networking Profesional</li>
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Mentorías
-                            </li>
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Eventos
-                                Anuales</li>
-                        </ul>
-                        <button
-                            class="w-full py-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 font-bold text-xs hover:bg-primary hover:text-white transition-all">Ver
-                            Más</button>
+                <div class="relative group">
+                    <!-- Carousel Layout for 3 Items Desktop/Mobile -->
+                    <div class="flex gap-6 overflow-x-auto hide-scroll snap-x snap-mandatory pb-8" id="projects-carousel">
+                        
+                        <!-- Slide 1 -->
+                        <div class="min-w-[85%] md:min-w-[calc(33.333%-1rem)] snap-start bg-white dark:bg-slate-900 rounded-[2rem] shadow-xl overflow-hidden border border-slate-100 dark:border-slate-800 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                            <div class="h-56 relative w-full group-hover:scale-105 transition-transform duration-700">
+                                <img src="assets/mantenimiento.jpeg" alt="Impermeabilización" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-8 flex flex-col flex-1 bg-white dark:bg-slate-900 relative z-10">
+                                <h4 class="text-2xl font-bold mb-3 text-primary dark:text-white leading-tight">Impermeabilización de Techos</h4>
+                                <p class="text-slate-500 mb-6 font-light text-sm flex-1">Protección vital de la infraestructura física para garantizar espacios seguros.</p>
+                                <div class="mb-8">
+                                    <div class="flex justify-between items-end mb-2">
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Inversión</p>
+                                        <p class="text-lg font-black text-secondary">+$205K USD</p>
+                                    </div>
+                                    <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-primary to-secondary h-2.5 rounded-full" style="width: 35%"></div>
+                                    </div>
+                                    <p class="text-right text-[10px] text-slate-400 font-bold mt-1">35% Recaudado</p>
+                                </div>
+                                <button class="border-2 border-primary text-primary dark:border-white dark:text-white hover:bg-primary hover:text-white py-3 rounded-xl font-bold w-full transition-all">Súmate al Proyecto</button>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="min-w-[85%] md:min-w-[calc(33.333%-1rem)] snap-start bg-white dark:bg-slate-900 rounded-[2rem] shadow-xl overflow-hidden border border-slate-100 dark:border-slate-800 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                            <div class="h-56 relative w-full group-hover:scale-105 transition-transform duration-700">
+                                <img src="assets/ninos2.jpg" alt="Centro San Luis" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-8 flex flex-col flex-1 bg-white dark:bg-slate-900 relative z-10">
+                                <h4 class="text-2xl font-bold mb-3 text-primary dark:text-white leading-tight">Centro San Luis y Capilla</h4>
+                                <p class="text-slate-500 mb-6 font-light text-sm flex-1">Culminación del oratorio y espacios de encuentro espiritual. Corazón formativo.</p>
+                                <div class="mb-8">
+                                    <div class="flex justify-between items-end mb-2">
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Inversión</p>
+                                        <p class="text-lg font-black text-secondary">+$40K USD</p>
+                                    </div>
+                                    <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-primary to-secondary h-2.5 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                    <p class="text-right text-[10px] text-slate-400 font-bold mt-1">60% Recaudado</p>
+                                </div>
+                                <button class="border-2 border-primary text-primary dark:border-white dark:text-white hover:bg-primary hover:text-white py-3 rounded-xl font-bold w-full transition-all">Súmate al Proyecto</button>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="min-w-[85%] md:min-w-[calc(33.333%-1rem)] snap-start bg-white dark:bg-slate-900 rounded-[2rem] shadow-xl overflow-hidden border border-slate-100 dark:border-slate-800 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                            <div class="h-56 relative w-full group-hover:scale-105 transition-transform duration-700">
+                                <img src="assets/musica.jpg" alt="Núcleo Sinfónico" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-8 flex flex-col flex-1 bg-white dark:bg-slate-900 relative z-10">
+                                <h4 class="text-2xl font-bold mb-3 text-primary dark:text-white leading-tight">Núcleo Sinfónico Gonzaga</h4>
+                                <p class="text-slate-500 mb-6 font-light text-sm flex-1">Adquiere instrumentos y acondiciona la acústica para expandir nuestro programa musical.</p>
+                                <div class="mb-8">
+                                    <div class="flex justify-between items-end mb-2">
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Meta</p>
+                                        <p class="text-lg font-black text-secondary">+$15K USD</p>
+                                    </div>
+                                    <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-primary to-secondary h-2.5 rounded-full" style="width: 15%"></div>
+                                    </div>
+                                    <p class="text-right text-[10px] text-slate-400 font-bold mt-1">Fase Inicial</p>
+                                </div>
+                                <button class="border-2 border-primary text-primary dark:border-white dark:text-white hover:bg-primary hover:text-white py-3 rounded-xl font-bold w-full transition-all">Súmate al Proyecto</button>
+                            </div>
+                        </div>
+
                     </div>
-                    <!-- Padres -->
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 shadow-lg">
-                        <span class="material-symbols-outlined text-secondary text-4xl mb-6">groups</span>
-                        <h4 class="text-xl font-bold mb-4">Consejo de Padres</h4>
-                        <p class="text-sm text-slate-500 font-light mb-6">Participación activa de las familias en la
-                            vida escolar.</p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Proyectos
-                                Pedagógicos</li>
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Escuela
-                                de Padres</li>
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Apoyos
-                                Solidarios</li>
-                        </ul>
-                        <button
-                            class="w-full py-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 font-bold text-xs hover:bg-primary hover:text-white transition-all">Ver
-                            Más</button>
-                    </div>
-                    <!-- Aliados -->
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 shadow-lg">
-                        <span class="material-symbols-outlined text-secondary text-4xl mb-6">diamond</span>
-                        <h4 class="text-xl font-bold mb-4">Círculo de Aliados</h4>
-                        <p class="text-sm text-slate-500 font-light mb-6">Empresas y organizaciones comprometidas con la
-                            educación.</p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Alianzas
-                                Estratégicas</li>
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                Patrocinios de Eventos</li>
-                            <li class="flex items-center gap-3 text-xs font-semibold"><span
-                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Prácticas
-                                Laborales</li>
-                        </ul>
-                        <button
-                            class="w-full py-3 rounded-xl border-2 border-slate-100 dark:border-slate-800 font-bold text-xs hover:bg-primary hover:text-white transition-all">Ver
-                            Más</button>
+                    
+                    <!-- Carousel Controls Mobile -->
+                    <div class="flex justify-center gap-4 mt-2 md:hidden">
+                        <button onclick="scrollProjects(-1)" class="w-12 h-12 rounded-full bg-white dark:bg-slate-800 shadow-md flex items-center justify-center"><span class="material-symbols-outlined text-primary">chevron_left</span></button>
+                        <button onclick="scrollProjects(1)" class="w-12 h-12 rounded-full bg-white dark:bg-slate-800 shadow-md flex items-center justify-center"><span class="material-symbols-outlined text-primary">chevron_right</span></button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Programas de Impacto -->
-        <section id="proyectos" class="py-24 bg-white dark:bg-slate-900 overflow-hidden">
-            <div class="container mx-auto px-6">
-                <!-- Beca un Gonzaga -->
-                <div id="beca" class="grid lg:grid-cols-2 gap-16 items-center mb-32">
-                    <div class="relative">
-                        <span
-                            class="text-secondary font-black text-[10px] uppercase tracking-widest mb-4 inline-block">Impulso
-                            a 2026</span>
-                        <h3 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-white mb-6">Beca un
-                            Gonzaga</h3>
-                        <p class="text-slate-500 mb-8 font-light italic leading-relaxed">Tu donación mensual garantiza
-                            que ningún estudiante brillante tenga que abandonar sus sueños por motivos económicos.</p>
-
-                        <div
-                            class="bg-slate-50 dark:bg-slate-800/40 p-8 rounded-3xl mb-8 border border-slate-100 dark:border-slate-800">
-                            <h5 class="text-xs font-black uppercase text-secondary mb-4">Ficha Técnica</h5>
-                            <div class="grid grid-cols-2 gap-4 text-xs">
-                                <p class="text-slate-400 font-bold">Meta Mensual:</p>
-                                <p class="text-right font-black">$5,200 USD</p>
-                                <p class="text-slate-400 font-bold">Beneficiarios:</p>
-                                <p class="text-right font-black">120 Alumnos</p>
-                                <p class="text-slate-400 font-bold">Costo Promedio:</p>
-                                <p class="text-right font-black">$45 / mes</p>
-                            </div>
-                        </div>
-
-                        <a href="#"
-                            class="inline-block bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition-all">Donar
-                            para Becas</a>
+        <!-- 4. #SoyGonzagaResponsable -->
+        <section id="responsable" class="py-24 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="bg-slate-100 dark:bg-slate-800 rounded-[3rem] p-4 flex items-center justify-center overflow-hidden aspect-square">
+                        <img src="assets/propuestaeducativa.jpeg" alt="Familia Gonzaga" class="w-full h-full object-cover rounded-[2.5rem] mix-blend-multiply dark:mix-blend-normal opacity-90" />
                     </div>
-                    <div class="relative">
-                        <div class="rounded-[3rem] overflow-hidden shadow-2xl h-[500px]">
-                            <img src="assets/propuestaeducativa.jpeg" alt="Beneficiaria"
-                                class="w-full h-full object-cover">
-                        </div>
-                        <!-- Testimonio Widget -->
-                        <div
-                            class="absolute bottom-10 -left-10 bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-2xl max-w-sm border border-slate-100 dark:border-slate-800">
-                            <p
-                                class="text-sm italic font-serif leading-relaxed mb-4 text-slate-700 dark:text-slate-300">
-                                "Gracias a la beca puedo concentrarme solo en mis estudios y soñar con ser ingeniera."
-                            </p>
-                            <p class="text-[10px] font-black uppercase tracking-widest text-primary">— Beneficiaria 4to
-                                Año</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Soy Gonzaga Valiente -->
-                <div id="valiente" class="grid lg:grid-cols-2 gap-16 items-center mb-32">
-                    <div class="order-2 lg:order-1">
-                        <div class="rounded-[3rem] overflow-hidden shadow-2xl h-[400px]">
-                            <img src="assets/ninos2.jpg" alt="Infraestructura" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                    <div class="order-1 lg:order-2">
-                        <span
-                            class="text-secondary font-black text-[10px] uppercase tracking-widest mb-4 inline-block">Infraestructura</span>
-                        <h3 class="text-4xl font-extrabold text-primary dark:text-white mb-6">Soy Gonzaga Valiente</h3>
-                        <p class="text-slate-500 mb-8 font-light leading-relaxed">Modernización de espacios educativos:
-                            laboratorios, canchas y salones equipados con tecnología de vanguardia.</p>
-                        <a href="#"
-                            class="inline-block bg-secondary text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition-all">Contribuir
-                            a Obras</a>
-                    </div>
-                </div>
-
-                <!-- Soy Gonzaga Responsable -->
-                <div id="responsable" class="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <span
-                            class="text-secondary font-black text-[10px] uppercase tracking-widest mb-4 inline-block">Tecnología
-                            y Medio Ambiente</span>
-                        <h3 class="text-4xl font-extrabold text-primary dark:text-white mb-6">Soy Gonzaga
-                            <br>Responsable
-                        </h3>
-                        <p class="text-slate-500 mb-8 font-light leading-relaxed">Impulsamos proyectos de sostenibilidad
-                            y digitalización para reducir nuestra huella y potenciar el aprendizaje digital.</p>
-                        <a href="#"
-                            class="inline-block bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition-all">Apoyar
-                            Proyectos</a>
-                    </div>
-                    <div class="relative">
-                        <div class="rounded-[3rem] overflow-hidden shadow-2xl h-[400px]">
-                            <img src="assets/musica.jpg" alt="Sostenibilidad" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Aliados Estratégicos -->
-        <section class="py-16 border-y border-slate-100 dark:border-slate-800">
-            <div class="container mx-auto px-6 text-center">
-                <h5 class="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-10 italic">Nuestros
-                    Aliados Estratégicos</h5>
-                <div
-                    class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-50 hover:opacity-100 transition-opacity">
-                    <span class="font-black text-2xl text-slate-300">UCAB</span>
-                    <span class="font-black text-2xl text-slate-300">Fe y Alegría</span>
-                    <span class="font-black text-2xl text-slate-300">POLAR</span>
-                    <span class="font-black text-2xl text-slate-300">Banesco</span>
-                    <span class="font-black text-2xl text-slate-300">CANTV</span>
-                    <span class="font-black text-2xl text-slate-300">UNESCO</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Meta de Recaudación -->
-        <section class="py-24 bg-primary text-white relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
-            <div class="container mx-auto px-6 text-center relative z-10">
-                <h3 class="text-3xl font-bold mb-16 uppercase tracking-widest">Meta de Recaudación del Mes</h3>
-
-                <div class="flex flex-col items-center gap-12">
-                    <!-- Circular Chart -->
-                    <div class="relative w-64 h-64 circular-progress rounded-full p-6 flex items-center justify-center">
-                        <div class="bg-primary w-full h-full rounded-full flex flex-col items-center justify-center">
-                            <span class="text-6xl font-black">78%</span>
-                            <p class="text-[10px] font-bold tracking-widest opacity-60 uppercase">Logrado</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-20 w-full max-w-2xl">
-                        <div>
-                            <p class="text-5xl font-black mb-2">$45,200</p>
-                            <p class="text-xs uppercase font-bold tracking-[0.2em] text-blue-200">Recaudado</p>
-                        </div>
-                        <div>
-                            <p class="text-5xl font-black mb-2">$58,000</p>
-                            <p class="text-xs uppercase font-bold tracking-[0.2em] text-blue-200">Meta Mensual</p>
-                        </div>
-                    </div>
-
-                    <p class="text-sm font-light text-blue-100 max-w-lg mx-auto opacity-70">"Poco a poco, con el aporte
-                        de cada uno de nosotros, vamos construyendo el futuro de nuestros jóvenes."</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dona tu Tiempo -->
-        <section class="py-24 bg-white dark:bg-slate-900 overflow-hidden">
-            <div class="container mx-auto px-6">
-                <div
-                    class="relative rounded-[3rem] overflow-hidden bg-slate-900 border border-white/5 shadow-2xl group">
-                    <!-- Background Decor -->
-                    <div
-                        class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full -mr-64 -mt-64 blur-3xl group-hover:bg-primary/20 transition-colors duration-700">
-                    </div>
-
-                    <div class="grid lg:grid-cols-2 items-center">
-                        <div class="p-12 md:p-20 relative z-10 text-white">
-                            <span
-                                class="inline-block bg-secondary text-white px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest uppercase mb-8 shadow-xl">Impacto
-                                Social</span>
-                            <h3 class="text-4xl md:text-5xl font-serif italic mb-6 leading-tight">Tu tiempo es el mejor
-                                <br><span class="text-blue-400">financiamiento</span>
-                            </h3>
-                            <p class="text-lg text-slate-400 mb-10 font-light leading-relaxed max-w-lg">
-                                Donar talento y cercanía es una forma poderosa de transformar vidas. Únete a nuestra red
-                                de voluntarios y sé el puente hacia el futuro de nuestros jóvenes.
-                            </p>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="voluntarios.html"
-                                    class="inline-flex items-center justify-center bg-white text-slate-900 px-10 py-4 rounded-2xl font-bold hover:bg-blue-50 transition-all shadow-xl group/btn">
-                                    Ser Voluntario
-                                    <span
-                                        class="material-symbols-outlined ml-2 group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-                                </a>
-                                <a href="voluntarios.html#intereses"
-                                    class="inline-flex items-center justify-center border-2 border-white/10 text-white px-10 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all">
-                                    Ver Áreas de Apoyo
-                                </a>
+                        <h3 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-white mb-4 leading-tight">Soy Gonzaga<br>Responsable</h3>
+                        <p class="text-lg font-bold text-primary dark:text-blue-400 mb-8">"La ciudadanía activa empieza por casa"</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-10">Entendemos la educación como una inversión compartida. El aporte familiar no es solo una mensualidad, es el sustento que permite la viabilidad de un proyecto educativo de alto impacto social en el occidente del país.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 flex items-center gap-4 hover:shadow-md transition-shadow">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-lg">family_restroom</span>
+                                </div>
+                                <span class="font-bold text-sm text-slate-800 dark:text-white">Compromiso de Solidaridad Familiar</span>
                             </div>
-                        </div>
-                        <div class="relative h-[400px] lg:h-full min-h-[400px]">
-                            <img src="assets/vol.jpeg" alt="Voluntariado Gonzaga"
-                                class="absolute inset-0 w-full h-full object-cover grayscale-[30%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000">
-                            <!-- Gradient Overlay -->
-                            <div
-                                class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/40 to-transparent lg:block hidden">
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent lg:hidden block">
+                            <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 flex items-center gap-4 hover:shadow-md transition-shadow">
+                                <div class="w-10 h-10 rounded-full bg-red-100 text-secondary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-lg">volunteer_activism</span>
+                                </div>
+                                <span class="font-bold text-sm text-slate-800 dark:text-white">Modelo de Aporte Justo</span>
                             </div>
                         </div>
                     </div>
@@ -644,35 +407,122 @@
             </div>
         </section>
 
-        <!-- Historia en Imágenes -->
-        <section id="catalogo" class="py-24 bg-slate-50 dark:bg-slate-800/20">
-            <div class="container mx-auto px-6">
-                <div class="flex justify-between items-end mb-12">
-                    <h3 class="text-3xl font-extrabold text-primary dark:text-white uppercase tracking-tight">Nuestra
-                        Historia en Imágenes</h3>
-                    <a href="#"
-                        class="bg-white dark:bg-slate-900 px-6 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold hover:bg-slate-50 transition-all shadow-sm">Ver
-                        Galería Completa</a>
+        <!-- 5. Nuestra Transparencia (Métricas) -->
+        <section class="py-24 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 text-center">
+            <div class="container mx-auto px-6" style="max-width: 70%;">
+                <h2 class="text-[10px] font-black uppercase tracking-[0.4em] text-secondary mb-4 italic">Transparencia</h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-white mb-6">Gestión Responsable de Recursos</h3>
+                <p class="text-xl text-slate-600 dark:text-slate-300 mb-16 font-serif italic mx-auto">"Invertimos primero en las personas y protegemos la infraestructura con lo que es posible."</p>
+                
+                <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
+                    <!-- Ingresos -->
+                    <div class="bg-slate-50 dark:bg-slate-800/40 p-10 rounded-[3rem] shadow-xl border border-slate-100 dark:border-slate-800 flex flex-col border-t-4 border-t-primary">
+                        <h4 class="text-xl font-bold mb-8 text-primary dark:text-white flex items-center justify-center gap-2"><span class="material-symbols-outlined text-[28px]">payments</span> Fuentes de Ingreso</h4>
+                        <div class="space-y-8 flex-1">
+                            <div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">family_restroom</span> <span class="font-bold text-sm">Familias</span></div>
+                                    <span class="font-black text-lg text-primary">86%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3"><div class="bg-primary h-3 rounded-full" style="width: 86%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">account_balance</span> <span class="font-bold text-sm">Subvención AVEC</span></div>
+                                    <span class="font-black text-lg text-primary">12%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3"><div class="bg-primary h-3 rounded-full opacity-70" style="width: 12%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">handshake</span> <span class="font-bold text-sm">Benefactores</span></div>
+                                    <span class="font-black text-lg text-primary">2%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3"><div class="bg-primary h-3 rounded-full opacity-40" style="width: 2%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Presupuesto -->
+                    <div class="bg-slate-50 dark:bg-slate-800/40 p-10 rounded-[3rem] shadow-xl border border-slate-100 dark:border-slate-800 flex flex-col border-t-4 border-t-secondary">
+                        <h4 class="text-xl font-bold mb-8 text-primary dark:text-white flex items-center justify-center gap-2"><span class="material-symbols-outlined text-[28px]">pie_chart</span> Distribución del Presupuesto</h4>
+                        <div class="space-y-8 flex-1">
+                            <div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">groups</span> <span class="font-bold text-sm">Talento Humano</span></div>
+                                    <span class="font-black text-lg text-secondary">65%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3"><div class="bg-secondary h-3 rounded-full" style="width: 65%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">school</span> <span class="font-bold text-sm">Proyecto Educativo</span></div>
+                                    <span class="font-black text-lg text-secondary">20%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3"><div class="bg-secondary h-3 rounded-full opacity-70" style="width: 20%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-end mb-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">domain</span> <span class="font-bold text-sm">Infraestructura</span></div>
+                                    <span class="font-black text-lg text-secondary">15%</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3"><div class="bg-secondary h-3 rounded-full opacity-40" style="width: 15%"></div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="h-64 rounded-3xl overflow-hidden group">
-                        <img src="assets/portada_historia.png" alt="Histórico 1"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="h-64 rounded-3xl overflow-hidden group">
-                        <img src="assets/egresados.png" alt="Histórico 2"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="h-64 rounded-3xl overflow-hidden group">
-                        <img src="assets/actualidad_hero.png" alt="Histórico 3"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <div class="h-64 rounded-3xl overflow-hidden group">
-                        <img src="assets/propuestaeducativa.jpeg" alt="Histórico 4"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+
+        <!-- 6 & 7. Red de Exalumnos y Voluntariado -->
+        <section class="py-24 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Red de Exalumnos Card -->
+                    <div class="relative rounded-[2rem] overflow-hidden group shadow-xl h-[450px] flex flex-col justify-end p-10">
+                        <img src="assets/egresados.png" alt="Exalumnos" class="absolute inset-0 w-full h-full object-cover grayscale-[30%]">
+                        <div class="absolute inset-0 bg-primary/90 mix-blend-multiply"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+                        <div class="relative z-10">
+                            <p class="text-secondary font-bold text-sm mb-2">Egresados Gonzaga</p>
+                            <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">Red de Exalumnos</h3>
+                            <p class="text-blue-100 mb-8 max-w-sm text-sm">Más de <span class="font-bold text-white">3,500 graduados</span> conectados para potenciar su alma mater.</p>
+                            <a href="exalumnos.html" class="inline-block bg-white text-primary px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg">Unirme a la Red</a>
+                        </div>
                     </div>
 
+                    <!-- Voluntariado Card -->
+                    <div class="relative rounded-[2rem] overflow-hidden group shadow-xl h-[450px] flex flex-col justify-end p-10">
+                        <img src="assets/vol.jpeg" alt="Voluntariado" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-slate-800/90 mix-blend-multiply"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+                        <div class="relative z-10">
+                            <p class="text-secondary font-bold text-sm mb-2 opacity-80">Compromiso Social</p>
+                            <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">Voluntariado</h3>
+                            <p class="text-slate-300 mb-8 max-w-sm text-sm"><span class="font-bold text-white">120+ voluntarios activos</span> transformando realidades en las comunidades.</p>
+                            <a href="voluntarios.html" class="inline-block bg-white text-slate-900 px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg">Ser Voluntario</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Donate Banner Final -->
+        <section id="donar-ahora" class="py-8 bg-gradient-to-r from-secondary to-red-800 text-slate-50 text-center relative overflow-hidden border-t-8 border-yellow-400">
+            <!-- Decoration -->
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-red-600/30 rounded-full blur-3xl -mr-64 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-900/50 rounded-full blur-3xl -ml-64 -mb-32"></div>
+            
+            <div class="container mx-auto px-6 relative z-10 max-w-4xl">
+                <span class="material-symbols-outlined text-4xl text-yellow-400 mb-3 drop-shadow-md">favorite</span>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Tu Solidaridad Escribe el Futuro</h3>
+                <p class="text-lg md:text-xl font-serif italic text-red-100 max-w-2xl mx-auto mb-5">Con tu aporte sostenemos los sueños y proyectos de nuestra comunidad ignaciana.</p>
+                <button class="bg-yellow-400 text-slate-900 px-10 py-3 rounded-full font-black text-lg hover:bg-yellow-300 transition-all shadow-2xl hover:scale-110 flex items-center justify-center gap-2 mx-auto">
+                    <span class="material-symbols-outlined text-[20px]">savings</span>
+                    Donar Ahora Mismo
+                </button>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-primary pt-20 pb-10 text-white">
@@ -723,7 +573,7 @@
                             <a class="hover:text-white transition-colors" href="#">Pastoral Educativa</a>
                         </li>
                         <li>
-                            <a class="hover:text-white transition-colors" href="#">Beca un Gonzaga</a>
+                            <a class="hover:text-white transition-colors" href="financiamiento.html#beca">Beca un Gonzaga</a>
                         </li>
                     </ul>
                 </div>
@@ -744,7 +594,7 @@
                         </li>
                     </ul>
                     <a class="inline-flex items-center gap-2 bg-secondary hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-secondary/30"
-                        href="financiamiento.html">
+                        href="#donar-ahora">
                         <span class="material-symbols-outlined text-xl">favorite</span>
                         Donar Aquí
                     </a>
@@ -781,36 +631,14 @@
             htmlElement.classList.add("dark");
         }
 
-        // Transparency Carousel
-        let transIndex = 0;
-        const transTrack = document.getElementById('transparency-track');
-        const transDots = document.querySelectorAll('#transparency-dots div');
-
-        function moveTransparency(dir) {
-            transIndex = (transIndex + dir + 3) % 3;
-            updateTransparency();
+        // Horizontal Sync Scroll for Projects (Mobile)
+        function scrollProjects(dir) {
+            const container = document.getElementById('projects-carousel');
+            if(container) {
+                const scrollAmount = container.clientWidth * 0.8;
+                container.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
+            }
         }
-
-        function setTransparency(idx) {
-            transIndex = idx;
-            updateTransparency();
-        }
-
-        function updateTransparency() {
-            transTrack.style.transform = `translateX(-${transIndex * 100}%)`;
-            transDots.forEach((dot, i) => {
-                if (i === transIndex) {
-                    dot.classList.add('active', 'bg-white/70');
-                    dot.classList.remove('bg-white/30');
-                } else {
-                    dot.classList.remove('active', 'bg-white/70');
-                    dot.classList.add('bg-white/30');
-                }
-            });
-        }
-
-        // Auto slide
-        setInterval(() => moveTransparency(1), 6000);
     </script>
 </body>
 
