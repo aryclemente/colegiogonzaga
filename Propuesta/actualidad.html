@@ -238,10 +238,8 @@
 
                     <!-- Radio Logo/Branding -->
                     <div class="inline-flex flex-col items-center mb-6">
-                        <img src="assets/radiogonzaganegrofondo.png" alt="Radio Gonzaga"
-                            class="h-40 md:h-52 lg:h-60 xl:h-64 w-auto object-contain">
-                        <p class="text-white/80 uppercase tracking-[0.4em] text-[10px] font-semibold mt-2">La Voz de Tu
-                            Comunidad</p>
+                        <img src="assets/radiogonzaganegrofondo.png" alt="Radio Gonzaga" class="h-40 md:h-52 lg:h-60 xl:h-64 w-auto object-contain">
+                        <p class="text-white/80 uppercase tracking-[0.4em] text-[10px] font-semibold mt-2">Tu voz, nuestra historia</p>
                     </div>
                 </div>
 
@@ -259,14 +257,13 @@
                         </div>
 
                         <div class="flex-1 text-center md:text-left">
-                            <button
-                                class="bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-bold text-sm mb-4 hover:bg-yellow-300 transition-colors uppercase tracking-wider">
-                                Escuchar en Vivo
+                            <button class="bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-bold text-sm mb-4 hover:bg-yellow-300 transition-colors uppercase tracking-wider">
+                                Sintonizar Radio
                             </button>
                             <div class="text-white">
                                 <h4 class="text-xl font-bold mb-1">En reproducción:</h4>
-                                <p class="text-white/70 font-light italic">"El Matutino de Gonzaga - Conectados con el
-                                    Saber"</p>
+                                <p class="text-white/70 font-light italic">"Al aire ahora: “Buenos Días Gonzaga”"</p>
+                                <p class="text-white/60 text-sm mt-1">Crónicas del 80° Aniversario: Un recorrido por nuestra memoria.</p>
                             </div>
                         </div>
 
@@ -292,8 +289,7 @@
                         Gonzaga en Tiempo Real
                     </h3>
                     <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-                        Síguenos en nuestras redes sociales y mantente conectado con el día a día de nuestra
-                        institución.
+                        Síguenos en Instagram y vive el día a día de nuestra comunidad a través de cada historia.
                     </p>
                 </div>
 
@@ -417,13 +413,17 @@
         <section
             class="min-h-screen flex flex-col justify-center py-20 bg-slate-50 dark:bg-slate-800/20 border-t border-slate-100 dark:border-slate-800">
             <div class="container mx-auto px-8 md:px-12 lg:px-20">
-                <div class="flex items-center justify-between mb-12">
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-blue-400">
-                        Centro de Noticias
-                    </h3>
-                    <a href="#"
-                        class="text-primary dark:text-blue-400 font-bold hover:underline flex items-center gap-2">
-                        Ver todas
+                <div class="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
+                    <div>
+                        <h3 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-blue-400">
+                            Actualidad Gonzaga
+                        </h3>
+                        <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-2xl">
+                            Entérate de lo que sucede hoy en nuestra comunidad y descubre cómo seguimos haciendo historia.
+                        </p>
+                    </div>
+                    <a href="#" class="text-primary dark:text-blue-400 font-bold hover:underline flex items-center gap-2 shrink-0">
+                        Ver todas las noticias
                         <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                 </div>
@@ -517,15 +517,17 @@
 
             <div class="container mx-auto px-6 relative z-10 text-center">
                 <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-2">
-                    ¡Mantente al tanto de nuestras novedades!
+                    Suscríbete a nuestro boletín
                 </h3>
                 <p class="text-white/80 text-sm mb-6 max-w-xl mx-auto">
-                    Únete a nuestra comunidad y recibe las últimas noticias sobre eventos, programas y oportunidades.
+                    Recibe cada semana las noticias, eventos y logros de nuestra comunidad directamente en tu bandeja de entrada.
                 </p>
-                <button
-                    class="bg-yellow-400 hover:bg-yellow-300 text-slate-900 px-8 py-2.5 rounded-full font-bold text-sm transition-all shadow-xl hover:scale-105 active:scale-95 uppercase tracking-widest">
-                    ¡Quiero recibirlo!
-                </button>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Tu correo electrónico" class="px-6 py-2.5 rounded-full text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full" required />
+                    <button class="bg-yellow-400 hover:bg-yellow-300 text-slate-900 px-8 py-2.5 rounded-full font-bold text-sm transition-all shadow-xl hover:scale-105 active:scale-95 uppercase tracking-widest whitespace-nowrap">
+                        Suscribirme
+                    </button>
+                </div>
             </div>
         </section>
     </main>
