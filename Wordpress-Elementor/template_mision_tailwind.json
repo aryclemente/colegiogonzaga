@@ -1,0 +1,167 @@
+{
+  "version": "0.4",
+  "title": "Plantilla Mision Gonzaga - Tailwind",
+  "type": "section",
+  "content": [
+    {
+      "id": "e8a9b21",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "_css_classes": "relative h-[60vh] flex items-center justify-center overflow-hidden w-full"
+      },
+      "elements": [
+        {
+          "id": "f5c2d34",
+          "elType": "widget",
+          "widgetType": "html",
+          "isInner": false,
+          "settings": {
+            "html": "<div class=\"absolute inset-0\"><img src=\"assets/2.png\" alt=\"Nuestra Identidad\" class=\"w-full h-full object-cover\" /><div class=\"absolute inset-0 hero-gradient\"></div></div>"
+          },
+          "elements": []
+        },
+        {
+          "id": "a1b2c3d",
+          "elType": "container",
+          "isInner": false,
+          "settings": {
+            "_css_classes": "relative z-10 text-center mt-12 w-full"
+          },
+          "elements": [
+            {
+              "id": "4e5f6g7",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "Nuestra Identidad",
+                "header_size": "h2",
+                "_css_classes": "text-5xl md:text-7xl font-serif italic text-white drop-shadow-2xl mb-4"
+              },
+              "elements": []
+            },
+            {
+              "id": "h8i9j0k",
+              "elType": "widget",
+              "widgetType": "heading",
+              "isInner": false,
+              "settings": {
+                "title": "Colegio Gonzaga Maracaibo",
+                "header_size": "p",
+                "_css_classes": "text-xl md:text-2xl text-white/90 font-light tracking-wide uppercase"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+       "id": "l1m2n3o",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+         "_css_classes": "relative -mt-24 z-20 pb-20 w-full"
+       },
+       "elements": [
+         {
+           "id": "p4q5r6s",
+           "elType": "container",
+           "isInner": false,
+           "settings": {
+             "_css_classes": "container mx-auto px-6 grid md:grid-cols-2 gap-8"
+           },
+           "elements": [
+             {
+               "id": "t7u8v9w",
+               "elType": "container",
+               "isInner": false,
+               "settings": {
+                 "_css_classes": "bg-white dark:bg-slate-800 p-10 rounded-[2.5rem] shadow-2xl flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-500"
+               },
+               "elements": [
+                 {
+                   "id": "x0y1z2a",
+                   "elType": "widget",
+                   "widgetType": "html",
+                   "isInner": false,
+                   "settings": {
+                     "html": "<div class=\"w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-500\"><span class=\"material-symbols-outlined text-4xl\">favorite</span></div>"
+                   },
+                   "elements": []
+                 },
+                 {
+                   "id": "b3c4d5e",
+                   "elType": "widget",
+                   "widgetType": "heading",
+                   "isInner": false,
+                   "settings": {
+                     "title": "Misión",
+                     "header_size": "h3",
+                     "_css_classes": "text-3xl font-extrabold text-primary dark:text-blue-400 mb-4"
+                   },
+                   "elements": []
+                 },
+                 {
+                   "id": "f6g7h8i",
+                   "elType": "widget",
+                   "widgetType": "text-editor",
+                   "isInner": false,
+                   "settings": {
+                     "editor": "Formamos ciudadanos en la excelencia humana y académica, inspirados por la espiritualidad ignaciana para servir con amor a Venezuela.",
+                     "_css_classes": "text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+                   },
+                   "elements": []
+                 }
+               ]
+             },
+             {
+               "id": "j9k0l1m",
+               "elType": "container",
+               "isInner": false,
+               "settings": {
+                 "_css_classes": "bg-white dark:bg-slate-800 p-10 rounded-[2.5rem] shadow-2xl flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-500"
+               },
+               "elements": [
+                 {
+                   "id": "n2o3p4q",
+                   "elType": "widget",
+                   "widgetType": "html",
+                   "isInner": false,
+                   "settings": {
+                     "html": "<div class=\"w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-500\"><span class=\"material-symbols-outlined text-4xl\">visibility</span></div>"
+                   },
+                   "elements": []
+                 },
+                 {
+                   "id": "r5s6t7u",
+                   "elType": "widget",
+                   "widgetType": "heading",
+                   "isInner": false,
+                   "settings": {
+                     "title": "Visión",
+                     "header_size": "h3",
+                     "_css_classes": "text-3xl font-extrabold text-primary dark:text-blue-400 mb-4"
+                   },
+                   "elements": []
+                 },
+                 {
+                   "id": "v8w9x0y",
+                   "elType": "widget",
+                   "widgetType": "text-editor",
+                   "isInner": false,
+                   "settings": {
+                     "editor": "Somos la institución educativa referente que impulsa una ciudadanía crítica y comprometida. Desde la innovación y la excelencia, lideramos la reconciliación y construimos el futuro de nuestra región y de Venezuela.",
+                     "_css_classes": "text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+                   },
+                   "elements": []
+                 }
+               ]
+             }
+           ]
+         }
+       ]
+    }
+  ]
+}

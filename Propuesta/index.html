@@ -90,7 +90,7 @@
     <div class="container mx-auto px-6 py-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-4">
-          <a href="code.html" class="flex items-center gap-4">
+          <a href="index.html" class="flex items-center gap-4">
             <img src="assets/LogoColegioGonzaga.png" alt="Colegio Gonzaga"
               class="h-12 w-auto rounded-full bg-white p-1" />
             <div class="hidden md:block">
@@ -627,24 +627,17 @@
         </div>
 
         <!-- Tabs -->
-        <div class="flex justify-center gap-8 md:gap-16 mb-16 border-b border-slate-200 dark:border-slate-700">
+        <div class="flex justify-center flex-wrap gap-6 md:gap-16 mb-16 border-b border-slate-200 dark:border-slate-700">
           <button
             class="proposal-tab active pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
-            data-tab="academico">
-            Académico
+            data-tab="tecnologia">
+            Tecnología
             <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-100 transition-transform"></div>
           </button>
           <button
             class="proposal-tab pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
-            data-tab="musica">
-            Música
-            <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-0 transition-transform origin-left">
-            </div>
-          </button>
-          <button
-            class="proposal-tab pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
-            data-tab="deportes">
-            Deportes
+            data-tab="cultura">
+            Cultura
             <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-0 transition-transform origin-left">
             </div>
           </button>
@@ -655,105 +648,99 @@
             <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-0 transition-transform origin-left">
             </div>
           </button>
+          <button
+            class="proposal-tab pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
+            data-tab="impacto">
+            Impacto
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary scale-x-0 transition-transform origin-left">
+            </div>
+          </button>
         </div>
 
         <!-- Contenido de Tabs -->
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <!-- Académico -->
-          <div class="proposal-content active" data-content="academico">
-            <img src="assets/propuestaeducativa.jpeg" alt="Excelencia Académica"
-              class="w-full rounded-3xl shadow-lg object-cover" />
+          <!-- Tecnología -->
+          <div class="proposal-content active" data-content="tecnologia">
+            <img src="assets/propuestaeducativa.jpeg" alt="Transformación Digital" class="w-full rounded-3xl shadow-lg object-cover" />
           </div>
-          <div class="proposal-content active" data-content="academico">
+          <div class="proposal-content active" data-content="tecnologia">
             <span class="text-primary font-bold uppercase text-sm tracking-wider">
-              Formación de Excelencia
+              Innovación a futuro
             </span>
             <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
-              Excelencia Académica
+              Transformación Digital
             </h3>
             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              Promovemos un aprendizaje profundo y riguroso que prepara a
-              nuestros estudiantes para los retos globales con una visión
-              crítica y humanista. Nuestro enfoque integra metodologías
-              innovadoras, pensamiento análitico y valores de servicio.
+              Formamos a más de 900 estudiantes en herramientas tecnológicas y plataformas on-line. Integramos IA y pensamiento computacional en nuestro currículo, respaldados por expertos en Inteligencia Digital.
             </p>
-            <button
-              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
+            <a href="propuestaeducativa.html"
+              class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
               Saber más
               <span class="material-symbols-outlined text-lg">arrow_right</span>
-            </button>
+            </a>
           </div>
 
-          <!-- Música -->
-          <div class="proposal-content hidden" data-content="musica">
-            <img src="assets/musica.jpg" alt="Formación Musical" class="w-full rounded-3xl shadow-lg object-cover" />
+          <!-- Cultura -->
+          <div class="proposal-content hidden" data-content="cultura">
+            <img src="assets/musica.jpg" alt="Identidad y Arte" class="w-full rounded-3xl shadow-lg object-cover" />
           </div>
-          <div class="proposal-content hidden" data-content="musica">
+          <div class="proposal-content hidden" data-content="cultura">
             <span class="text-primary font-bold uppercase text-sm tracking-wider">
-              Expresión Artística
+              Expresión y Ciudadanía
             </span>
             <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
-              Formación Musical
+              Identidad y Arte
             </h3>
             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              La música es un pilar fundamental en nuestra propuesta
-              educativa. Desarrollamos talentos musicales, promovemos la
-              expresión creativa y fortalecemos valores de disciplina, trabajo
-              en equipo y sensibilidad artística.
+              Desarrollamos el talento de nuestros estudiantes a través de Gaitas Gonzaga, la Coral, la Escuela de Teatro y Gonzaga Radio; espacios vivos para preservar la cultura zuliana y el pensamiento crítico.
             </p>
-            <button
-              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
+            <a href="propuestaeducativa.html"
+              class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
               Saber más
               <span class="material-symbols-outlined text-lg">arrow_right</span>
-            </button>
-          </div>
-
-          <!-- Deportes -->
-          <div class="proposal-content hidden" data-content="deportes">
-            <img src="assets/deporte.png" alt="Formación Deportiva" class="w-full rounded-3xl shadow-lg object-cover" />
-          </div>
-          <div class="proposal-content hidden" data-content="deportes">
-            <span class="text-primary font-bold uppercase text-sm tracking-wider">
-              Desarrollo Integral
-            </span>
-            <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
-              Excelencia en Deportes
-            </h3>
-            <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              El deporte desarrolla carácter, liderazgo y espíritu de equipo.
-              Contamos con programas deportivos de excelencia que forman
-              atletas íntegros, comprometidos con el esfuerzo, la disciplina y
-              los valores éticos.
-            </p>
-            <button
-              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
-              Saber más
-              <span class="material-symbols-outlined text-lg">arrow_right</span>
-            </button>
+            </a>
           </div>
 
           <!-- Pastoral -->
           <div class="proposal-content hidden" data-content="pastoral">
-            <img src="assets/pastoral.jpeg" alt="Formación Pastoral"
-              class="w-full rounded-3xl shadow-lg object-cover" />
+            <img src="assets/pastoral.jpeg" alt="Formación Juvenil Ignaciana" class="w-full rounded-3xl shadow-lg object-cover" />
           </div>
           <div class="proposal-content hidden" data-content="pastoral">
             <span class="text-primary font-bold uppercase text-sm tracking-wider">
-              Fe y Compromiso
+              Para el mejor servir
             </span>
             <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
-              Pastoral Educativa
+              Pastoral y Liderazgo
             </h3>
             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              Basada en los valores del Evangelio y la Compañía de Jesús,
-              nuestra pastoral forma ciudadanos comprometidos con la justicia
-              social, el bien común y el servicio desinteresado a los demás.
+              A través del Movimiento Huellas, Brújula Juvenil y nuestros Oratorios, formamos ciudadanos líderes, promoviendo el conocimiento interior, trabajo en equipo y una fuerte mirada social.
             </p>
-            <button
-              class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 transition-all">
+            <a href="propuestaeducativa.html"
+              class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
               Saber más
               <span class="material-symbols-outlined text-lg">arrow_right</span>
-            </button>
+            </a>
+          </div>
+
+          <!-- Impacto -->
+          <div class="proposal-content hidden" data-content="impacto">
+            <img src="assets/slide3.jpeg" alt="Nuestro Impacto Comunitario" class="w-full rounded-3xl shadow-lg object-cover" />
+          </div>
+          <div class="proposal-content hidden" data-content="impacto">
+            <span class="text-primary font-bold uppercase text-sm tracking-wider">
+              80 Años de Historia
+            </span>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white my-4">
+              Impacto Comunitario
+            </h3>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              Un proyecto educativo que transforma nuestra región. Contamos con 52.000 m² de infraestructura y 110 profesionales dedicados a impulsar el desarrollo integral de más de 930 alumnos y 720 familias vinculadas.
+            </p>
+            <a href="propuestaeducativa.html"
+              class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
+              Saber más
+              <span class="material-symbols-outlined text-lg">arrow_right</span>
+            </a>
           </div>
         </div>
       </div>
