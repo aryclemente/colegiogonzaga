@@ -156,6 +156,30 @@
               </ul>
             </div>
           </div>
+          <div class="nav-dropdown group h-full flex items-center relative">
+            <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
+              href="#">Comunidad
+              <span
+                class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+            </a>
+            <div
+              class="dropdown-content absolute top-full left-0 w-64 bg-white dark:bg-slate-900 shadow-xl border border-slate-100 dark:border-slate-800 rounded-b-xl py-4">
+              <ul class="space-y-1">
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="#">EDUCA</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="#">Correo Electrónico</a>
+                </li>
+                <li>
+                  <a class="block px-6 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-primary transition-colors"
+                    href="#">Asistencia</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <a class="hover:text-primary transition-colors py-2" href="actualidad.html">Actualidad</a>
           <div class="nav-dropdown group h-full flex items-center relative">
             <a class="hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-1 cursor-default py-2"
@@ -304,6 +328,22 @@
                 class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Extra-Cátedra</a>
               <a href="propuestaeducativa.html#pastoral"
                 class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Pastoral</a>
+            </div>
+          </li>
+
+          <!-- Comunidad -->
+          <li>
+            <button
+              class="mobile-dropdown-btn w-full flex items-center justify-between py-2 text-lg font-bold text-slate-800 dark:text-white"
+              data-target="m-comunidad">
+              Comunidad
+              <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+            </button>
+            <div id="m-comunidad" class="hidden pl-4 mt-2 space-y-3 border-l-2 border-slate-100 dark:border-slate-800">
+              <a href="#" class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">EDUCA</a>
+              <a href="#" class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Correo
+                Electrónico</a>
+              <a href="#" class="block py-1 text-slate-600 dark:text-slate-400 hover:text-primary">Asistencia</a>
             </div>
           </li>
 
@@ -513,88 +553,114 @@
           <div class="aspect-square relative group overflow-hidden rounded-2xl insta-hover shadow-lg">
             <img alt="Sport event"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              src="assets/instagram4.png" />
+              src="assets/Instagram4.png" />
             <div
               class="overlay absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 transition-opacity">
               <span class="material-symbols-outlined text-white text-4xl">favorite</span>
             </div>
           </div>
         </div>
-        <div
-          class="grid lg:grid-cols-[40%_60%] gap-0 items-stretch border border-slate-200 dark:border-slate-800 rounded-[2.5rem] overflow-hidden shadow-sm mb-16">
-          <div
-            class="bg-slate-50 dark:bg-slate-800/40 p-8 lg:p-12 flex flex-col items-center text-center justify-center relative group">
-            <div class="absolute top-0 left-0 w-full h-1 bg-secondary opacity-20"></div>
-            <div class="relative mb-6">
-              <div
-                class="w-28 h-28 bg-white dark:bg-slate-800 rounded-3xl flex items-center justify-center text-primary dark:text-blue-400 shadow-xl group-hover:scale-105 transition-transform duration-500">
-                <span class="material-symbols-outlined text-6xl">podcasts</span>
-              </div>
-              <div
-                class="absolute -bottom-3 -right-3 w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-white border-4 border-white dark:border-slate-800">
-                <span class="material-symbols-outlined text-sm">mic</span>
-              </div>
-            </div>
-            <div class="mb-4">
-              <span
-                class="inline-block px-4 py-1.5 rounded-full bg-secondary text-white text-[10px] font-bold uppercase tracking-[0.2em] mb-2">
-                Próximamente
-              </span>
-              <h3 class="text-4xl font-extrabold text-primary dark:text-white mb-3">
-                Radio Gonzaga
-              </h3>
-            </div>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed max-w-sm text-lg font-light italic">
-              "Un nuevo espacio para la voz de nuestra comunidad. Sintoniza la
-              creatividad, el debate y la música de nuestros estudiantes."
+
+
+      </div>
+    </section>
+
+    <!-- Centro de Noticias -->
+    <section
+      class="min-h-screen flex flex-col justify-center py-20 bg-slate-50 dark:bg-slate-800/20 border-t border-slate-100 dark:border-slate-800">
+      <div class="container mx-auto px-8 md:px-12 lg:px-20">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
+          <div>
+            <h3 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-blue-400">
+              Cartelera Colegial
+
+            </h3>
+            <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-2xl">
+              Entérate de lo que sucede hoy en nuestra comunidad y descubre cómo seguimos haciendo historia.
             </p>
-            <div class="mt-6 flex gap-4">
-              <div class="w-12 h-1 bg-primary/20 rounded-full"></div>
-              <div class="w-12 h-1 bg-secondary/40 rounded-full"></div>
-              <div class="w-12 h-1 bg-primary/20 rounded-full"></div>
+          </div>
+          <a href="#"
+            class="text-primary dark:text-blue-400 font-bold hover:underline flex items-center gap-2 shrink-0">
+            Ver todas las noticias
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Noticia 1 -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-shadow">
+            <div class="md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden">
+              <img src="assets/slide2.jpeg" alt="News Image" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8 md:w-2/3 flex flex-col justify-center">
+              <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 font-display">25
+                Feb, 2026</p>
+              <h4 class="text-xl font-extrabold text-slate-800 dark:text-white mb-3">Logros Académicos en
+                Olimpiadas de Matemáticas</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Nuestros estudiantes
+                destacaron en la fase regional de las olimpiadas nacionales...</p>
+              <a href="#"
+                class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                Leer más <span class="material-symbols-outlined text-sm">chevron_right</span>
+              </a>
             </div>
           </div>
-          <div class="bg-white dark:bg-slate-900 p-8 lg:p-12 flex flex-col justify-center">
-            <div class="space-y-6">
-              <div class="group">
-                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
-                  15 Octubre, 2024
-                </p>
-                <h4 class="text-2xl md:text-3xl font-extrabold text-primary dark:text-blue-400 leading-tight mb-3">
-                  Celebración del 80 Aniversario del Colegio Gonzaga
-                </h4>
-                <a class="inline-flex items-center text-secondary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform"
-                  href="#">
-                  Leer más
-                  <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
-                </a>
-              </div>
-              <div class="group">
-                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
-                  10 Octubre, 2024
-                </p>
-                <h4 class="text-2xl md:text-3xl font-extrabold text-primary dark:text-blue-400 leading-tight mb-3">
-                  Nuevos Laboratorios de Ciencia e Innovación
-                </h4>
-                <a class="inline-flex items-center text-secondary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform"
-                  href="#">
-                  Leer más
-                  <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
-                </a>
-              </div>
-              <div class="group">
-                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
-                  28 Septiembre, 2024
-                </p>
-                <h4 class="text-2xl md:text-3xl font-extrabold text-primary dark:text-blue-400 leading-tight mb-3">
-                  Encuentro Deportivo Intercolegial 2024
-                </h4>
-                <a class="inline-flex items-center text-secondary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform"
-                  href="#">
-                  Leer más
-                  <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
-                </a>
-              </div>
+
+          <!-- Noticia 2 -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-shadow">
+            <div class="md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden">
+              <img src="assets/deporte.png" alt="News Image" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8 md:w-2/3 flex flex-col justify-center">
+              <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">18 Feb, 2026</p>
+              <h4 class="text-xl font-extrabold text-slate-800 dark:text-white mb-3">Éxito en el Torneo
+                Deportivo Intercolegial</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Varias disciplinas
+                lograron medallas de oro en el encuentro celebrado en Maracaibo...</p>
+              <a href="#"
+                class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                Leer más <span class="material-symbols-outlined text-sm">chevron_right</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Noticia 3 -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-shadow">
+            <div class="md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden">
+              <img src="assets/pastoral.jpeg" alt="News Image" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8 md:w-2/3 flex flex-col justify-center">
+              <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">12 Feb, 2026</p>
+              <h4 class="text-xl font-extrabold text-slate-800 dark:text-white mb-3">Muestra fotográfica:
+                "Miradas al Corazón del Zulia"</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Una exposición que
+                resalta la belleza de nuestra región a través de la lente estudiantil...</p>
+              <a href="#"
+                class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                Leer más <span class="material-symbols-outlined text-sm">chevron_right</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Noticia 4 -->
+          <div
+            class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm hover:shadow-md transition-shadow">
+            <div class="md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden">
+              <img src="assets/propuestaeducativa.jpeg" alt="News Image" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8 md:w-2/3 flex flex-col justify-center">
+              <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">05 Feb, 2026</p>
+              <h4 class="text-xl font-extrabold text-slate-800 dark:text-white mb-3">Innovación en el
+                Aula: Nuevas Tecnologías Aplicadas</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Implementamos nuevos
+                recursos digitales para potenciar el aprendizaje significativo...</p>
+              <a href="#"
+                class="text-secondary font-bold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                Leer más <span class="material-symbols-outlined text-sm">chevron_right</span>
+              </a>
             </div>
           </div>
         </div>
@@ -611,6 +677,7 @@
             </a>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -627,7 +694,8 @@
         </div>
 
         <!-- Tabs -->
-        <div class="flex justify-center flex-wrap gap-6 md:gap-16 mb-16 border-b border-slate-200 dark:border-slate-700">
+        <div
+          class="flex justify-center flex-wrap gap-6 md:gap-16 mb-16 border-b border-slate-200 dark:border-slate-700">
           <button
             class="proposal-tab active pb-4 font-bold uppercase text-sm tracking-wider text-slate-600 dark:text-slate-400 relative transition-colors"
             data-tab="tecnologia">
@@ -661,7 +729,8 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Tecnología -->
           <div class="proposal-content active" data-content="tecnologia">
-            <img src="assets/propuestaeducativa.jpeg" alt="Transformación Digital" class="w-full rounded-3xl shadow-lg object-cover" />
+            <img src="assets/propuestaeducativa.jpeg" alt="Transformación Digital"
+              class="w-full rounded-3xl shadow-lg object-cover" />
           </div>
           <div class="proposal-content active" data-content="tecnologia">
             <span class="text-primary font-bold uppercase text-sm tracking-wider">
@@ -671,7 +740,8 @@
               Transformación Digital
             </h3>
             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              Formamos a más de 900 estudiantes en herramientas tecnológicas y plataformas on-line. Integramos IA y pensamiento computacional en nuestro currículo, respaldados por expertos en Inteligencia Digital.
+              Formamos a más de 900 estudiantes en herramientas tecnológicas y plataformas on-line. Integramos IA y
+              pensamiento computacional en nuestro currículo, respaldados por expertos en Inteligencia Digital.
             </p>
             <a href="propuestaeducativa.html"
               class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
@@ -692,7 +762,8 @@
               Identidad y Arte
             </h3>
             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              Desarrollamos el talento de nuestros estudiantes a través de Gaitas Gonzaga, la Coral, la Escuela de Teatro y Gonzaga Radio; espacios vivos para preservar la cultura zuliana y el pensamiento crítico.
+              Desarrollamos el talento de nuestros estudiantes a través de Gaitas Gonzaga, la Coral, la Escuela de
+              Teatro y Gonzaga Radio; espacios vivos para preservar la cultura zuliana y el pensamiento crítico.
             </p>
             <a href="propuestaeducativa.html"
               class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
@@ -703,7 +774,8 @@
 
           <!-- Pastoral -->
           <div class="proposal-content hidden" data-content="pastoral">
-            <img src="assets/pastoral.jpeg" alt="Formación Juvenil Ignaciana" class="w-full rounded-3xl shadow-lg object-cover" />
+            <img src="assets/pastoral.jpeg" alt="Formación Juvenil Ignaciana"
+              class="w-full rounded-3xl shadow-lg object-cover" />
           </div>
           <div class="proposal-content hidden" data-content="pastoral">
             <span class="text-primary font-bold uppercase text-sm tracking-wider">
@@ -713,7 +785,8 @@
               Pastoral y Liderazgo
             </h3>
             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              A través del Movimiento Huellas, Brújula Juvenil y nuestros Oratorios, formamos ciudadanos líderes, promoviendo el conocimiento interior, trabajo en equipo y una fuerte mirada social.
+              A través del Movimiento Huellas, Brújula Juvenil y nuestros Oratorios, formamos ciudadanos líderes,
+              promoviendo el conocimiento interior, trabajo en equipo y una fuerte mirada social.
             </p>
             <a href="propuestaeducativa.html"
               class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
@@ -724,7 +797,8 @@
 
           <!-- Impacto -->
           <div class="proposal-content hidden" data-content="impacto">
-            <img src="assets/slide3.jpeg" alt="Nuestro Impacto Comunitario" class="w-full rounded-3xl shadow-lg object-cover" />
+            <img src="assets/slide3.jpeg" alt="Nuestro Impacto Comunitario"
+              class="w-full rounded-3xl shadow-lg object-cover" />
           </div>
           <div class="proposal-content hidden" data-content="impacto">
             <span class="text-primary font-bold uppercase text-sm tracking-wider">
@@ -734,7 +808,8 @@
               Impacto Comunitario
             </h3>
             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-              Un proyecto educativo que transforma nuestra región. Contamos con 52.000 m² de infraestructura y 110 profesionales dedicados a impulsar el desarrollo integral de más de 930 alumnos y 720 familias vinculadas.
+              Un proyecto educativo que transforma nuestra región. Contamos con 52.000 m² de infraestructura y 110
+              profesionales dedicados a impulsar el desarrollo integral de más de 930 alumnos y 720 familias vinculadas.
             </p>
             <a href="propuestaeducativa.html"
               class="inline-flex bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold items-center gap-2 transition-all">
@@ -1004,53 +1079,52 @@
             Comunidad <span class="text-primary">Gonzaga</span>
           </h2>
           <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Herramientas digitales exclusivas para el personal docente,
-            administrativo y de servicios de nuestra institución.
+            Espacios y herramientas exclusivas para el encuentro, aprendizaje y
+            la voz de todos en nuestra institución.
           </p>
         </div>
-        <div class="grid md:grid-cols-4 gap-6">
-          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <!-- Aula Virtual -->
+          <a class="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-200 dark:border-slate-800 p-10 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 sm:gap-8"
             href="#">
             <div
-              class="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-              <span class="material-symbols-outlined text-3xl">school</span>
+              class="absolute top-0 left-0 w-full h-1 bg-primary opacity-20 group-hover:opacity-100 transition-opacity">
             </div>
-            <div class="text-center">
-              <h5 class="text-xl font-bold">Aula Virtual</h5>
-              <p class="text-sm text-slate-500">Moodle &amp; Recursos</p>
+            <div
+              class="w-24 h-24 rounded-3xl bg-blue-50 dark:bg-slate-800 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-lg shrink-0">
+              <span class="material-symbols-outlined text-4xl">school</span>
+            </div>
+            <div class="flex-1">
+              <h5
+                class="text-2xl font-extrabold text-slate-800 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                Aula Virtual</h5>
+              <p class="text-slate-500 dark:text-slate-400">Accede a Moodle y todos los recursos educativos digitales
+                exclusivos de nuestra comunidad.</p>
             </div>
           </a>
-          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
+
+          <!-- Radio Gonzaga -->
+          <a class="group relative overflow-hidden bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all border border-slate-200 dark:border-slate-800 p-10 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 sm:gap-8"
             href="#">
             <div
-              class="w-16 h-16 rounded-2xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-              <span class="material-symbols-outlined text-3xl">badge</span>
+              class="absolute top-0 left-0 w-full h-1 bg-secondary opacity-20 group-hover:opacity-100 transition-opacity">
             </div>
-            <div class="text-center">
-              <h5 class="text-xl font-bold">Profesores &amp; Personal</h5>
-              <p class="text-sm text-slate-500">INSIEM &amp; Correo</p>
-            </div>
-          </a>
-          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
-            href="#">
             <div
-              class="w-16 h-16 rounded-2xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
-              <span class="material-symbols-outlined text-3xl">mail</span>
+              class="w-24 h-24 rounded-3xl bg-red-50 dark:bg-slate-800 flex items-center justify-center text-secondary group-hover:scale-110 group-hover:bg-secondary group-hover:text-white transition-all duration-500 shadow-lg shrink-0 relative">
+              <span class="material-symbols-outlined text-4xl">podcasts</span>
+              <div
+                class="absolute -bottom-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white border-2 border-white dark:border-slate-800">
+                <span class="material-symbols-outlined text-xs">mic</span>
+              </div>
             </div>
-            <div class="text-center">
-              <h5 class="text-xl font-bold">Correo Electrónico</h5>
-              <p class="text-sm text-slate-500">Contacto Oficial</p>
-            </div>
-          </a>
-          <a class="group bg-white dark:bg-slate-900 px-8 py-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col items-center gap-4 h-full"
-            href="#">
-            <div
-              class="w-16 h-16 rounded-2xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-              <span class="material-symbols-outlined text-3xl">event_note</span>
-            </div>
-            <div class="text-center">
-              <h5 class="text-xl font-bold">Asistencia</h5>
-              <p class="text-sm text-slate-500">Control Horario</p>
+            <div class="flex-1">
+              <span
+                class="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-[10px] font-bold uppercase tracking-widest mb-3 border border-secondary/20">Próximamente</span>
+              <h5
+                class="text-2xl font-extrabold text-slate-800 dark:text-white mb-2 group-hover:text-secondary transition-colors">
+                Radio Gonzaga</h5>
+              <p class="text-slate-500 dark:text-slate-400">Sintoniza la creatividad, el debate y la música de nuestros
+                estudiantes en un nuevo espacio.</p>
             </div>
           </a>
         </div>
@@ -1122,7 +1196,7 @@
             Preguntas Frecuentes
           </h2>
           <p class="text-lg text-slate-600 dark:text-slate-400">
-            Aquí resolvemos tus dudas más comunes sobre admisiones.
+            Estamos aquí para acompañarte. Encuentra las respuestas que necesitas sobre el Gonzaga.
           </p>
         </div>
 
@@ -1133,7 +1207,7 @@
             <button
               class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
               <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
-                ¿Cuáles son los requisitos de inscripción?
+                ¿En qué horario puedo realizar trámites en Administración?
               </span>
               <span
                 class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
@@ -1143,16 +1217,14 @@
             <div class="faq-content hidden overflow-hidden">
               <div
                 class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
-                <p>
-                  Para inscribirse en el Colegio Gonzaga, es necesario cumplir
-                  con los siguientes requisitos:
-                </p>
-                <ul class="list-disc list-inside mt-3 space-y-2">
-                  <li>Tener la edad correspondiente al nivel solicitado</li>
-                  <li>Presentar récords académicos de años anteriores</li>
-                  <li>Aprobar la evaluación académica y pedagógica</li>
-                  <li>Entrevista con la familia y el estudiante</li>
+                <p class="mb-2">Contamos con dos modalidades de atención para tu comodidad:</p>
+                <ul class="list-disc list-inside space-y-2 mb-3">
+                  <li><strong>Presencial (En Taquilla):</strong> Lunes a viernes de 7:00 a.m. a 12:40 p.m.</li>
+                  <li><strong>Atención Telefónica:</strong> Lunes a viernes hasta las 3:00 p.m.</li>
                 </ul>
+                <p class="text-sm border-l-4 border-primary pl-3 italic opacity-90">
+                  <strong>Nota importante:</strong> Para garantizar la transparencia y el orden, todas las consultas digitales y telefónicas se responden estrictamente por orden de llegada. Agradecemos tu paciencia mientras procesamos cada solicitud.
+                </p>
               </div>
             </div>
           </div>
@@ -1162,7 +1234,7 @@
             <button
               class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
               <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
-                ¿Qué documentos necesito presentar?
+                ¿Cuáles son los datos para el pago de mensualidades?
               </span>
               <span
                 class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
@@ -1172,14 +1244,24 @@
             <div class="faq-content hidden overflow-hidden">
               <div
                 class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
-                <p>Debes presentar los siguientes documentos:</p>
-                <ul class="list-disc list-inside mt-3 space-y-2">
-                  <li>Cédula de identidad del estudiante</li>
-                  <li>Partida de nacimiento ampliada</li>
-                  <li>Récords académicos de los últimos 2 años</li>
-                  <li>Carnet de vacunación actualizado</li>
-                  <li>Fotocopia de cédulas de representantes</li>
-                </ul>
+                <p class="mb-3">Puedes realizar tus aportes a través de los siguientes canales oficiales:</p>
+                <div class="mb-4">
+                  <strong class="text-slate-800 dark:text-slate-200 mb-2 block">Pago Móvil:</strong>
+                  <ul class="list-none space-y-1 text-sm bg-white dark:bg-slate-800 p-3 rounded border border-slate-100 dark:border-slate-700">
+                    <li><strong>Banco:</strong> Mercantil</li>
+                    <li><strong>RIF:</strong> J070128550</li>
+                    <li><strong>Teléfono:</strong> 04128901601</li>
+                  </ul>
+                </div>
+                <div class="mb-4">
+                  <strong class="text-slate-800 dark:text-slate-200 mb-2 block">Transferencia Bancaria (Mercantil):</strong>
+                  <p class="text-sm bg-white dark:bg-slate-800 p-3 rounded border border-slate-100 dark:border-slate-700">
+                    <strong>Nº de Cuenta:</strong> 01050149161149242280
+                  </p>
+                </div>
+                <p class="text-sm border-l-4 border-secondary pl-3 italic opacity-90">
+                  <strong>Importante:</strong> Para validar tu pago, es obligatorio enviar el comprobante al WhatsApp de Administración Gonzaga: <strong>04122719232</strong>. Recuerda que las consultas por esta vía se atienden por orden de llegada hasta las 3:00 p.m.
+                </p>
               </div>
             </div>
           </div>
@@ -1189,7 +1271,7 @@
             <button
               class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
               <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
-                ¿Cómo puedo pagar la matrícula?
+                ¿Cómo puedo solicitar mi certificado de notas si soy exalumno?
               </span>
               <span
                 class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
@@ -1199,18 +1281,11 @@
             <div class="faq-content hidden overflow-hidden">
               <div
                 class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
-                <p>
-                  Contamos con diversas opciones de pago para mayor comodidad:
-                </p>
-                <ul class="list-disc list-inside mt-3 space-y-2">
-                  <li>Pago en efectivo o transferencia bancaria</li>
-                  <li>Planes de financiamiento en cuotas</li>
-                  <li>Descuentos por hermanos o referidos</li>
-                  <li>Becas parciales y completas según disponibilidad</li>
-                </ul>
-                <p class="mt-3">
-                  Contáctanos en +58 422-6410505 para más información.
-                </p>
+                <p class="mb-2">Para obtener tu certificado, sigue este proceso:</p>
+                <ol class="list-decimal list-inside space-y-3">
+                  <li><strong>Paga el trámite:</strong> Acude a la oficina de Administración (de 7:00 a.m. a 12:40 p.m.) para realizar el pago correspondiente.</li>
+                  <li><strong>Solicita en Secretaría:</strong> Con tu comprobante en mano, dirígete a Secretaría para formalizar la petición de tus notas.</li>
+                </ol>
               </div>
             </div>
           </div>
@@ -1220,7 +1295,7 @@
             <button
               class="faq-btn w-full px-6 py-4 flex items-center justify-between bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
               <span class="text-lg font-semibold text-primary dark:text-blue-400 text-left">
-                ¿Hay becas disponibles?
+                ¿Dónde está ubicado el Colegio Gonzaga?
               </span>
               <span
                 class="material-symbols-outlined faq-icon text-primary dark:text-blue-400 transition-transform flex-shrink-0">
@@ -1230,18 +1305,10 @@
             <div class="faq-content hidden overflow-hidden">
               <div
                 class="px-6 py-4 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-t border-slate-200 dark:border-slate-700">
-                <p>
-                  Sí, contamos con un programa de becas que se asignan según:
-                </p>
-                <ul class="list-disc list-inside mt-3 space-y-2">
-                  <li>Excelencia académica y disciplinaria</li>
-                  <li>Condición socioeconómica de la familia</li>
-                  <li>Desempeño deportivo o artístico destacado</li>
-                  <li>Necesidades especiales de inclusión</li>
-                </ul>
-                <p class="mt-3">
-                  Las becas se otorgan durante el período de preinscripción.
-                  Consulta con Admisiones sobre los requisitos específicos.
+                <p class="mb-3">Nos encuentras en el Barrio San José, Avenida 35, No. 92F250, en el sector Los Postes Negros de Maracaibo.</p>
+                <p class="text-sm bg-slate-100 dark:bg-slate-800 p-3 rounded inline-block border-l-4 border-primary">
+                  <span class="material-symbols-outlined text-sm inline align-text-bottom mr-1 text-primary">location_on</span>
+                  <strong>Referencia clave:</strong> Si vienes por la vía principal desde el centro, estamos ubicados justo después de pasar el Hotel Aladino.
                 </p>
               </div>
             </div>
